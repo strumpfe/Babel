@@ -28,8 +28,8 @@ my $help;
 # Google Fusion table ID & Key
 my $fusiontable = "1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls";
 my $key         = $ENV{APIKEY};                                   # Get API key from environment variable or declare it on command line
-my $dir         = "~/DATA_FILES";
-my $data_file   = "VectorBase_SRA_info.dat";
+our $dir         = $ENV{"HOME"} . "/DATA_FILES";
+our $data_file   = "VectorBase_SRA_info.dat";
 
 
 # Options
@@ -77,22 +77,20 @@ unless ($key) {
   exit(0);
 }
 
-# retrieve data from local hash structure
-if ($local) {
+## Read SRA track information
+## either from Fusion table or local file
 
-  # Do we want to have abiliity to work with alternative hash structure, define via file option
-
-  # do everything in $dir (Projects/VectorBase/CAP)
-  chdir("$dir");
-
-  # retrieve the hash from the file.
-  print "// Using data from hash :: $data_file\n\n" if ( $moreverbose );
-  &get_data_from_local_file;
-}
 # retrieve data from Google Fusion table
-elsif ($fusion) {
+if ($fusion) {
   print "// Using data from Fusion table :: $fusiontable\n\n" if ( $moreverbose );
   &get_data_from_fusion;
+}
+# retrieve data from local hash structure
+elsif ($local) {
+  # Do we want to have abiliity to work with alternative hash structure, define via file option
+  # retrieve the hash from the file.
+  print "// Using data from hash :: $dir/$data_file\n\n" if ( $moreverbose );
+  &get_data_from_local_file;
 }
 else {
   print "# $0 " . gmtime( time()) ."\n\n";
@@ -237,16 +235,16 @@ sub get_data_from_fusion{
 
   open (DATA, "curl -s https://www.googleapis.com/fusiontables/v1/query? -d \"sql=SELECT%20Track_name,Species,Assembly,Source_name,Caption,Description,Source_URL,Source_type,Display,SRA_project,Release%20FROM%20$fusiontable&key=$key\" |");
   while (<DATA>) {
-    if ( /rows/ ) {$start = 1;print "<<ON>>\n"; push @f,"n/a"; next;}
+    if ( /rows/ ) {$start = 1;print "<<ON>>\n" if ($moreverbose); push @f,"NULL"; next;}
     next unless ( $start );
     chomp;
-    if ( $verbose ) { print "// Line: '$_'\n"; }
+    if ( $moreverbose ) { print "// Line: '$_'\n" if ($moreverbose); }
 
     if    (/\[/)        { next;}
-    elsif (/\]/)        { print "<<OFF>>\n\n";
+    elsif (/\]/)        { print "<<OFF>>\n\n" if ($moreverbose);
      if ( $f[1] ne "" ) {
             $track = $f[1]; 
-            print "// Writing data for track '$track'\n" if ( $verbose );
+            print "// Writing data for track '$track'\n" if ( $moreverbose );
 
             # Check that track name is unique
             foreach my $i (sort keys %SRA){
@@ -268,22 +266,25 @@ sub get_data_from_fusion{
             $SRA{$track}->{sra_project}   = $f[10];
             $SRA{$track}->{released}      = $f[11];
 
-            print "// $track,$f[2],$f[3],$f[4]\n\n<<ON>>\n" if ($verbose);
+            print "// $track,$f[2],$f[3],$f[4]\n\n<<ON>>\n" if ($moreverbose);
 
             }
       @f=""; 
       next;
       }
     elsif (/(\".+\")/,) { $value = $1; $value =~ s/"//g; push @f,$value;  next; }
-    elsif (/(\"\")/,)   { push @f,"n/a";}
+    elsif (/(\"\")/,)   { push @f,"NULL";}
 
   }
   close DATA;
 
-  print "// Wrote " . scalar %SRA . " tracks to hash\n\n" if ( $moreverbose );
+  print "// Wrote " . scalar %SRA . " tracks to hash\n" if ($verbose);
 
-  &write_data_to_local_file;
-
+  # write hash to dat file on local disk (for future reference)
+  if ($local) {
+    print "// Writing local copy of hash (as you declared the -local option)\n" if ($verbose);
+    &write_data_to_local_file;
+  }
 }
 
 #-----------------------------------------------------------------------------------------------#
@@ -297,7 +298,7 @@ sub get_data_from_fusion{
 ##
 
 sub get_data_from_local_file {
-    open (FH, "<$dir/$data_file") or die "$data_file : $!";
+    open (FH, "< $dir/$data_file") or die "$dir/$data_file : $!";
     undef $/;
     my $data = <FH>;
     eval $data;
@@ -309,9 +310,10 @@ sub get_data_from_local_file {
 
 sub write_data_to_local_file {
     my $str =Data::Dumper->Dump( [\%SRA],[qw/*SRA/]);
-    open (FH, ">$dir/$data_file");
+    open (FH, "> $dir/$data_file") or die "Can't open $dir/$data_file as output .dat\n";
     print FH $str;
     close FH;
+    print "// Wrote hash %SRA to '$dir/$data_file'\n\n" if ($verbose);
 }
 
 #-----------------------------------------------------------------------------------------------#
@@ -339,7 +341,7 @@ sub track_summary_stats {
 
   # read through hash
   foreach my $i (sort keys %SRA) {
-    print "$SRA{$i}->{track}\t$SRA{$i}->{species}\n" if ( $verbose );
+    print STDOUT "$SRA{$i}->{track}\t$SRA{$i}->{species}\n" if ( $verbose );
 
     # Tracks (sanity check)
     $no_tracks++;
@@ -362,8 +364,11 @@ sub track_summary_stats {
   my $no_assemblies = scalar (keys %assembly_count);
   my $no_projects   = scalar (keys %project_count);
   my $no_types      = scalar (keys %track_by_type);
-  # report
 
+  ##
+  ## report
+  ##
+  print "\n";
   print "+---------------------------+\n";
   print "| SRA RNAseq tracks         |\n";
   print "+---------------------------+--------+\n";
@@ -388,12 +393,12 @@ sub track_summary_stats {
   print   "+---------------------------+--------+\n";
 
   foreach my $i (sort {$project_by_species{$b} <=> $project_by_species{$a} or "$a" cmp "$b"} keys %project_by_species) {
-    print   "| full list of species-project |\n" if ( $verbose );
-    printf ("| %-25s | %6s |\n", $i, $project_by_species{$i}) if ( $verbose );
+    print   "| full list of species-project |\n" if ( $moreverbose );
+    printf ("| %-25s | %6s |\n", $i, $project_by_species{$i}) if ( $moreverbose );
     ($species,$project) = split(/-/,$i);
     $project_count_by_species{$species}++; 
   }
-  print   "| summary list of species-project |\n" if ( $verbose );
+  print   "| summary list of species-project |\n" if ( $moreverbose );
   foreach my $i (sort {$project_count_by_species{$b} <=> $project_count_by_species{$a} or "$a" cmp "$b"} keys %project_count_by_species) {
     printf ("| %-25s | %6s |\n", $i, $project_count_by_species{$i});
   }
