@@ -16,8 +16,10 @@ use Text::CSV;
 our %SRA;
 our $verbose;
 our $moreverbose;
+our $debug;
 
 my $bam; 
+my $bigwig;
 my $species;
 my @species;
 my $local;
@@ -28,8 +30,8 @@ my $help;
 # Google Fusion table ID & Key
 my $fusiontable = "1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls";
 my $key         = $ENV{APIKEY};                                   # Get API key from environment variable or declare it on command line
-our $dir         = $ENV{"HOME"} . "/DATA_FILES";
-our $data_file   = "VectorBase_SRA_info.dat";
+our $dir        = $ENV{"HOME"} . "/DATA_FILES";
+our $data_file  = "VectorBase_SRA_info.dat";
 
 
 # Options
@@ -49,6 +51,7 @@ GetOptions (
     "fusion"        => \$fusion,
     # File type
     "bam"           => \$bam,
+    "bigwig"        => \$bigwig,
     # Search
     "species=s{2}"  => \@species,
     # General
@@ -60,7 +63,17 @@ GetOptions (
 
 #-----------------------------------------------------------------------------------------------#
 
+# Join items in array @species to make the binomial name
 $species = join ' ',@species;
+
+# Verbose option summary of script run
+if ($moreverbose) {
+#    print "# $0 " . gmtime( time()) ."\n";
+    print "- Summary of data structure contents\n" if ($summary);
+    print "- Track type: BAM\n" if ($bam);
+    print "- Track type: bigWig\n" if ($bigwig);
+    print "- Species   : $species\n";
+}
 
 # pod documentation for help
 if ( $help ) {
@@ -69,7 +82,7 @@ if ( $help ) {
 
 # Check that we have a Google API key
 unless ($key) {
-  print "# $0 " . gmtime( time()) ."\n\n";
+#  print "# $0 " . gmtime( time()) ."\n\n";
   print "No API key declared. Aborting.\n";
   print "Either set this as an environment variable (APIKEY)\n";
   print "Or set one using the following option:\n";
@@ -93,7 +106,7 @@ elsif ($local) {
   &get_data_from_local_file;
 }
 else {
-  print "# $0 " . gmtime( time()) ."\n\n";
+#  print "# $0 " . gmtime( time()) ."\n\n";
   print "No data source declared. Aborting.\n";
   print "Use one of the following options:\n";
   print " '-local' option to read from local hash structure\n";
@@ -103,7 +116,7 @@ else {
 }
 
 unless ( ($species) or ($summary) ) {
-  print "# $0 " . gmtime( time()) ."\n\n";
+#  print "# $0 " . gmtime( time()) ."\n\n";
   print "No species declared. Aborting.\n";
   print "Use one of the following options:\n";
   print " '-species' option to declare which species to parse\n";
@@ -113,19 +126,19 @@ unless ( ($species) or ($summary) ) {
 # Check that species assignment is valid
 if ( $species ) {
   my $found;
-  foreach (<DATA>) {
+
+  while (<DATA>) {
     chomp;
     last if /^__END__$/;         # stop when __END__ is encountered
     next if /^\s*(#.*|\s*)$/;    # skip blank lines or comment lines
     print "// Attempting to match '$_' to $species\n" if ($moreverbose);
-    if ($_ eq $species) { $found = 1; print "// Matched species $species\n" if ($verbose); }
+    if ($_ eq $species) { $found = 1; print "// Matched species $species\n" if ($moreverbose); }
   }
   unless ( $found > 0 ) {        # species name not matched
-    print "# $0 " . gmtime( time()) ."\n\n";
+#    print "# $0 " . gmtime( time()) ."\n\n";
     print "Couldn't match species name '$species'\n";
     print "Add the species binomial name to the __DATA__ secion at the foot of this script and re-run\n\n";
     exit(0);}
-
 }
 
 
@@ -133,31 +146,19 @@ if ( $species ) {
 ## Command option selected subroutines
 ##
 
-# Verbose option summary of script run
-if ($moreverbose) {
-    print "# $0 " . gmtime( time()) ."\n";
-    print "- Summary of data structure contents\n" if ($summary);
-    print "- Track type: BAM\n" if ($bam);
-    print "- Species   : $species\n";
-    print "\n";
-  }
-
 &track_summary_stats if ($summary);
 
-&write_bam_configuration($species) if ($bam);
+&write_bam_configuration($species)    if ($bam);
+&write_bigwig_configuration($species) if ($bigwig);
 
 exit(0);
 
-#-----------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------------------------------------------------------#
 
-#https://www.googleapis.com/fusiontables/v1/tables/1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls/columns?key=AIzaSyABkuMYY-mkvjYxlQ9gokmbFZ_1L5ALt3A
+##
+## Subroutines
+##
 
-#https://www.googleapis.com/fusiontables/v1/query?sql=SELECT%20Track%20name%20FROM%20 1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls&key=AIzaSyABkuMYY-mkvjYxlQ9gokmbFZ_1L5ALt3A
-
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------#
-
-
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------#
 ##
 ## Write out BAM configuration
 ##
@@ -174,7 +175,7 @@ sub write_bam_configuration {
   }
   print "// Found $items tracks for $species\n" if ($verbose);
   if ( $items == 0 ) {       # Species name is correct but no data available
-    print "# $0 " . gmtime( time()) ."\n\n";
+#    print "# $0 " . gmtime( time()) ."\n\n";
     print "No track data found for $species'\n";
     print "Add track data to the Google Fusion table and re-run\n\n";
     exit(0);
@@ -197,7 +198,8 @@ sub write_bam_configuration {
   # write list of tracks
   foreach my $i (sort keys %SRA) {                     # $i = track name
     next unless ( $SRA{$i}->{species} eq $species );   # Only process those tracks from the selected species
-    print "// WARNING: Note sure how we got here unless $SRA{$i}->{species} == $species\n" if ($moreverbose);
+    next unless ( $SRA{$i}->{source_type} eq "bam" );     # Only process those tracks with type "bam"
+     print "// WARNING: Note sure how we got here unless $SRA{$i}->{species} == $species\n" if ($moreverbose);
     print "$i = rnaseq_align\n";
   }
   print "\n";
@@ -205,10 +207,11 @@ sub write_bam_configuration {
   # write track configuration
   foreach my $i (sort keys %SRA) {                     # $i = track name
     next unless ( $SRA{$i}->{species} eq $species );   # Only process those tracks from the selected species
+    next unless ( $SRA{$i}->{source_type} eq "bam" );     # Only process those tracks with type "bam"
     print "[$i]\n";
     print "source_name    = " . $SRA{$i}->{source_name} . "\n";
     print "description    = $SRA{$i}->{description}\n";
-    print "source_url     = $SRA{$i}->{source_url}\n";
+    print "source_url     = $SRA{$i}->{source_url_bam}\n";
     print "source_type    = bam\n";
     print "display        = off\n\n";
   }
@@ -218,6 +221,67 @@ sub write_bam_configuration {
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------#
 
+##
+## Write out bigWig configuration
+##
+
+sub write_bigwig_configuration {
+
+  my ($species) = @_;
+  my $items; 
+
+  # Repprt and check before proceeding
+  print "// Write out bigwig configuration for the ini file for $species\n" if ($verbose);
+  for my $i (sort keys %SRA) {       # $i = track name
+    if ( $SRA{$i}->{species} eq $species ) { $items++; }
+  }
+  print "// Found $items tracks for $species\n" if ($verbose);
+  if ( $items == 0 ) {       # Species name is correct but no data available
+#    print "# $0 " . gmtime( time()) ."\n\n";
+    print "No track data found for $species'\n";
+    print "Add track data to the Google Fusion table and re-run\n\n";
+    exit(0);
+   }
+
+  my @f;
+  my $value;
+  my %source_name;
+  my %description;
+  my %source_url;
+  my $inter;
+
+
+  # write header lines
+  print "#################\n";
+  print "# bigWig CONFIG #\n";
+  print "#################\n";
+  print "\n";
+  print "[ENSEMBL_INTERNAL_BIGWIG_SOURCES]\n";
+
+  # write list of tracks
+  foreach my $i (sort keys %SRA) {                           # $i = track name
+    next unless ( $SRA{$i}->{species} eq $species );         # Only process those tracks from the selected species
+    next unless ( $SRA{$i}->{source_type} eq "bigwig" );     # Only process those tracks with type "bigwig"
+    print "$i = rnaseq_align\n";
+  }
+  print "\n";
+
+  # write track configuration  (2nd iteration over whole list, should push to an array and read from that)
+  foreach my $i (sort keys %SRA) {                           # $i = track name
+    next unless ( $SRA{$i}->{species} eq $species );         # Only process those tracks from the selected species
+    next unless ( $SRA{$i}->{source_type} eq "bigwig" );     # Only process those tracks with type "bigwig"
+    print "[$i]\n";
+    print "source_name    = $SRA{$i}->{source_name}\n";
+    print "caption        = $SRA{$i}->{caption}\n";
+    print "description    = $SRA{$i}->{description}\n";
+    print "source_url     = $SRA{$i}->{source_url_bigwig}\n";
+    print "source_type    = bigWig\n";
+    print "display        = off\n";
+    print "\n";
+  }
+  print "\n";
+
+} #_ end of write_bigwig_configuration subroutine
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------#
 
@@ -233,18 +297,20 @@ sub get_data_from_fusion{
   my @f;
   my $start;
 
-  open (DATA, "curl -s https://www.googleapis.com/fusiontables/v1/query? -d \"sql=SELECT%20Track_name,Species,Assembly,Source_name,Caption,Description,Source_URL,Source_type,Display,SRA_project,Release%20FROM%20$fusiontable&key=$key\" |");
-  while (<DATA>) {
-    if ( /rows/ ) {$start = 1;print "<<ON>>\n" if ($moreverbose); push @f,"NULL"; next;}
+#  print "curl -s https://www.googleapis.com/fusiontables/v1/query? -d \"sql=SELECT%20Track_name,Species,Assembly,Source_name,Caption,Description,Source_URL_bam,Source_URL_bigwig,Source_type,Display,SRA_project,Release%20FROM%20$fusiontable&key=$key\" \n";
+
+  open (FUSIONTABLE, "curl -s https://www.googleapis.com/fusiontables/v1/query? -d \"sql=SELECT%20Track_name,Species,Assembly,Source_name,Caption,Description,Source_URL_bam,Source_URL_bigwig,Source_type,Display,SRA_project,Release%20FROM%20$fusiontable&key=$key\" |");
+  while (<FUSIONTABLE>) {
+    if ( /rows/ ) {$start = 1;print "<<ON>>\n" if ($debug); push @f,"NULL"; next;}
     next unless ( $start );
     chomp;
-    if ( $moreverbose ) { print "// Line: '$_'\n" if ($moreverbose); }
+    if ( $moreverbose ) { print "// Line: '$_'\n" if ($debug); }
 
     if    (/\[/)        { next;}
-    elsif (/\]/)        { print "<<OFF>>\n\n" if ($moreverbose);
+    elsif (/\]/)        { print "<<OFF>>\n\n" if ($debug);
      if ( $f[1] ne "" ) {
             $track = $f[1]; 
-            print "// Writing data for track '$track'\n" if ( $moreverbose );
+            print "// Writing data for track '$track'\n" if ( $debug );
 
             # Check that track name is unique
             foreach my $i (sort keys %SRA){
@@ -260,13 +326,14 @@ sub get_data_from_fusion{
             $SRA{$track}->{source_name}   = $f[4];
             $SRA{$track}->{caption}       = $f[5];
             $SRA{$track}->{description}   = $description;
-            $SRA{$track}->{source_url}    = $f[7];
-            $SRA{$track}->{source_type}   = $f[8];
-            $SRA{$track}->{display}       = $f[9];
-            $SRA{$track}->{sra_project}   = $f[10];
-            $SRA{$track}->{released}      = $f[11];
+            $SRA{$track}->{source_url_bam}      = $f[7];
+            $SRA{$track}->{source_url_bigwig}   = $f[8];
+            $SRA{$track}->{source_type}   = $f[9];
+            $SRA{$track}->{display}       = $f[10];
+            $SRA{$track}->{sra_project}   = $f[11];
+            $SRA{$track}->{released}      = $f[12];
 
-            print "// $track,$f[2],$f[3],$f[4]\n\n<<ON>>\n" if ($moreverbose);
+            print "// $track,$f[2],$f[3],$f[4]\n\n<<ON>>\n" if ($debug);
 
             }
       @f=""; 
@@ -276,7 +343,7 @@ sub get_data_from_fusion{
     elsif (/(\"\")/,)   { push @f,"NULL";}
 
   }
-  close DATA;
+  close FUSIONTABLE;
 
   print "// Wrote " . scalar %SRA . " tracks to hash\n" if ($verbose);
 
