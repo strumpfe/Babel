@@ -10,37 +10,30 @@ use IO::Handle;
 use Data::Dumper;
 use Net::FTP;
 
-use Text::ParseWords;
-use Text::CSV;
-
+# Hash name
 our %SRA;
-our $verbose;
-our $moreverbose;
-our $debug;
 
-my $bam; 
-my $bigwig;
-my $species;
-my @species;
-my $local;
-my $fusion;
-my $checkURLs;
-my $help;
+# Options
+my $verbose;             # Verbose messages
+my $moreverbose;         # More verbosity
+my $debug;               # Write out data parsing debug information (very verbose)
+my $help;                # Help documentation via POD
+my $local;               # Read from local hash .dat file
+my $fusion;              # Read from Google Fusion table
+my $bam;                 # Write bam configuration
+my $bigwig;              # Write bigWig configuration
+my $species;             # Filter by species
+my @species;             # Temp array to capture genus/species from command line. Concatenated into the $species var
+my $summary;             # Track summary statistics
+my $checkURLs;           # Validate source_URLs
 
 # Google Fusion table ID & Key
 my $fusiontable = "1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls";
 my $key         = $ENV{APIKEY};                                   # Get API key from environment variable or declare it on command line
-our $dir        = $ENV{"HOME"} . "/DATA_FILES";
-our $data_file  = "VectorBase_SRA_info.dat";
+my $dir        = $ENV{"HOME"} . "/DATA_FILES";                   # Define local directory for data files
+my $data_file  = "VectorBase_SRA_info.dat";                      # Define output dat file for local copy of hash
 
-
-# Options
-my $summary;    # Track summary statistics
-
-
-
-#-----------------------------------------------------------------------------------------------#
-
+#---------------------------------------------------------#
 GetOptions (
     # Misc
     "verbose"       => \$verbose,
@@ -59,9 +52,7 @@ GetOptions (
     "check"         => \$checkURLs,
     "key"           => \$key,
     );
-
-
-#-----------------------------------------------------------------------------------------------#
+#---------------------------------------------------------#
 
 # Join items in array @species to make the binomial name
 $species = join ' ',@species;
@@ -82,7 +73,7 @@ if ( $help ) {
 
 # Check that we have a Google API key
 unless ($key) {
-#  print "# $0 " . gmtime( time()) ."\n\n";
+  print "# $0 " . gmtime( time()) ."\n\n";
   print "No API key declared. Aborting.\n";
   print "Either set this as an environment variable (APIKEY)\n";
   print "Or set one using the following option:\n";
@@ -106,7 +97,7 @@ elsif ($local) {
   &get_data_from_local_file;
 }
 else {
-#  print "# $0 " . gmtime( time()) ."\n\n";
+  print "# $0 " . gmtime( time()) ."\n\n";
   print "No data source declared. Aborting.\n";
   print "Use one of the following options:\n";
   print " '-local' option to read from local hash structure\n";
@@ -116,7 +107,7 @@ else {
 }
 
 unless ( ($species) or ($summary) ) {
-#  print "# $0 " . gmtime( time()) ."\n\n";
+  print "# $0 " . gmtime( time()) ."\n\n";
   print "No species declared. Aborting.\n";
   print "Use one of the following options:\n";
   print " '-species' option to declare which species to parse\n";
@@ -135,7 +126,7 @@ if ( $species ) {
     if ($_ eq $species) { $found = 1; print "// Matched species $species\n" if ($moreverbose); }
   }
   unless ( $found > 0 ) {        # species name not matched
-#    print "# $0 " . gmtime( time()) ."\n\n";
+    print "# $0 " . gmtime( time()) ."\n\n";
     print "Couldn't match species name '$species'\n";
     print "Add the species binomial name to the __DATA__ secion at the foot of this script and re-run\n\n";
     exit(0);}
@@ -170,12 +161,12 @@ sub write_bam_configuration {
 
   # Repprt and check before proceeding
   print "// Write out bam configuration for the ini file for $species\n" if ($verbose);
-  for my $i (sort keys %SRA) {       # $i = track name
+  for my $i (sort keys %SRA) {                                         # $i = track name
     if ( $SRA{$i}->{species} eq $species ) { $items++; }
   }
   print "// Found $items tracks for $species\n" if ($verbose);
-  if ( $items == 0 ) {       # Species name is correct but no data available
-#    print "# $0 " . gmtime( time()) ."\n\n";
+  if ( $items == 0 ) {                                                 # Species name is correct but no data available
+    print "# $0 " . gmtime( time()) ."\n\n";
     print "No track data found for $species'\n";
     print "Add track data to the Google Fusion table and re-run\n\n";
     exit(0);
@@ -188,11 +179,11 @@ sub write_bam_configuration {
   my %source_url;
   my $inter;
 
-
   # write header lines
   print "#############\n";
   print "# BAM CONFIG\n";
-  print "#############\n\n";
+  print "#############\n";
+  print "\n";
   print "[ENSEMBL_INTERNAL_BAM_SOURCES]\n";
 
   # write list of tracks
@@ -237,7 +228,7 @@ sub write_bigwig_configuration {
   }
   print "// Found $items tracks for $species\n" if ($verbose);
   if ( $items == 0 ) {       # Species name is correct but no data available
-#    print "# $0 " . gmtime( time()) ."\n\n";
+    print "# $0 " . gmtime( time()) ."\n\n";
     print "No track data found for $species'\n";
     print "Add track data to the Google Fusion table and re-run\n\n";
     exit(0);
@@ -507,6 +498,7 @@ Anopheles arabiensis
 Anopheles atroparvus
 Anopheles christyi
 Anopheles culicifacies
+Anopheles darlingi
 Anopheles dirus
 Anopheles epiroticus
 Anopheles farauti
@@ -520,6 +512,11 @@ Anopheles quadriannulatus
 Anopheles sinensis
 Anopheles stephensi
 Culex quinquefasciatus
+Glossina morsitans
+Ixodes scapularis
+Lutzomyia longipalpis
+Pediculus humanus
+Phlebotomus papatasi
 __END__
  
 =pod
@@ -541,6 +538,8 @@ B<get_vectorbase_track_configuraton.pl> arguments:
 =item -local, Read data from local hash structure (as defined by variables $dir/$data_file) 
 
 =item -fusion, Read data from Google fusion table
+
+=item -fusion -local, Read data from Google fusion table and write hash to local disk for future reference (offline mode)
 
 =back
 
