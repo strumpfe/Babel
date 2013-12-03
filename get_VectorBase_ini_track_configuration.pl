@@ -30,8 +30,8 @@ my $checkURLs;           # Validate source_URLs
 # Google Fusion table ID & Key
 my $fusiontable = "1tHQgMvCjvbZ36jg3Kgl32Y9eiVYtGfE8S_sYXls";
 my $key         = $ENV{APIKEY};                                   # Get API key from environment variable or declare it on command line
-my $dir        = $ENV{"HOME"} . "/DATA_FILES";                   # Define local directory for data files
-my $data_file  = "VectorBase_SRA_info.dat";                      # Define output dat file for local copy of hash
+my $dir         = $ENV{"HOME"} . "/DATA_FILES";                   # Define local directory for data files
+my $data_file   = "VectorBase_SRA_info.dat";                      # Define output dat file for local copy of hash
 
 #---------------------------------------------------------#
 GetOptions (
@@ -317,18 +317,18 @@ sub get_data_from_fusion{
             # Correct for URL encofing of fields with HTML tags  { Description }
             $description = $f[6]; $description =~ s/\\u003c/</g; $description =~ s/\\u003e/>/g;
 
-            $SRA{$track}->{track}         = $track;
-            $SRA{$track}->{species}       = $f[2];
-            $SRA{$track}->{assembly}      = $f[3];
-            $SRA{$track}->{source_name}   = $f[4];
-            $SRA{$track}->{caption}       = $f[5];
-            $SRA{$track}->{description}   = $description;
-            $SRA{$track}->{source_url_bam}      = $f[7];
-            $SRA{$track}->{source_url_bigwig}   = $f[8];
-            $SRA{$track}->{source_type}   = $f[9];
-            $SRA{$track}->{display}       = $f[10];
-            $SRA{$track}->{sra_project}   = $f[11];
-            $SRA{$track}->{released}      = $f[12];
+            $SRA{$track}->{track}              = $track;
+            $SRA{$track}->{species}            = $f[2];
+            $SRA{$track}->{assembly}           = $f[3];
+            $SRA{$track}->{source_name}        = $f[4];
+            $SRA{$track}->{caption}            = $f[5];
+            $SRA{$track}->{description}        = $description;
+            $SRA{$track}->{source_url_bam}     = $f[7];
+            $SRA{$track}->{source_url_bigwig}  = $f[8];
+            $SRA{$track}->{source_type}        = $f[9];
+            $SRA{$track}->{display}            = $f[10];
+            $SRA{$track}->{sra_project}        = $f[11];
+            $SRA{$track}->{released}           = $f[12];
 
             print "// $track,$f[2],$f[3],$f[4]\n\n<<ON>>\n" if ($debug);
 
