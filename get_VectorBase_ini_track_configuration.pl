@@ -303,6 +303,12 @@ sub get_data_from_fusion{
             $track = $f[1]; 
             print "// Writing data for track '$track'\n" if ( $debug );
 
+            # Check for invalid chars in track name
+            unless ( $track =~ m/^[a-zA-Z0-9\s\_]+$/) {
+                print "// Track name contains non-standard characters: '$track'\n";
+                exit(0);
+            }
+
             # Check that track name is unique
             foreach my $i (sort keys %SRA){
                 if ( $i eq $track ) { print "// Duplicate Track name found: $track. This will need resolving before continuing.\n\n"; exit(0);}
