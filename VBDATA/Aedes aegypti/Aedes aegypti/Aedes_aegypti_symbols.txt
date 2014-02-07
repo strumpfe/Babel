@@ -1,0 +1,941 @@
+# VectorBase gene symbols
+# Description: Catalogue of gene symbols for Aedes aegypti from community submissions and citations
+# Species: Aedes aegypti
+# Genebuild: AaegL1.4
+# Date: VB-2013-08
+# Author: Dan Lawson lawson@ebi.ac.uk
+AAEL800007	AAEL016970	gene	Or1	odorant receptor
+AAEL800008	AAEL005999	gene	Or2	odorant receptor
+AAEL800009	AAEL017138	gene	Or3	odorant receptor
+AAEL800010	AAEL015147	gene	Or4	odorant receptor
+AAEL800011	AAEL011843	gene	Or5	odorant receptor
+AAEL800012	AAEL017548	gene	Or6	odorant receptor - partial
+AAEL800013	AAEL005776	gene	Or7	odorant receptor
+AAEL800014	AAEL012254	gene	Or8	odorant receptor
+AAEL800015	AAEL006005	gene	Or9	odorant receptor
+AAEL800016	AAEL006003	gene	Or10	odorant receptor
+AAEL800017	AAEL011583	gene	Or11	odorant receptor
+AAEL800018	AAEL009982	gene	Or12	odorant receptor - partial
+AAEL800019	AAEL008368	gene	Or13	odorant receptor
+AAEL800020	AAEL008442	gene	Or14	odorant receptor
+AAEL800021	AAEL008448	gene	Or15	odorant receptor
+AAEL800022	AAEL007110	gene	Or16	odorant receptor
+AAEL800023	AAEL010702	gene	Or17	odorant receptor
+AAEL800024	AAEL017510	gene	Or18	odorant receptor - partial
+AAEL800025	AAEL017017	gene	Or19	odorant receptor
+AAEL800026	AAEL004966	gene	Or20	odorant receptor
+AAEL800027	AAEL017398	gene	Or21	odorant receptor
+AAEL800028	AAEL001510	gene	Or23	odorant receptor
+AAEL800029	AAEL017557	gene	Or24	odorant receptor
+AAEL800030	AAEL003629	gene	Or25	odorant receptor
+AAEL800031	AAEL010428	gene	Or26	odorant receptor
+AAEL800032	AAEL010418	gene	Or27	odorant receptor
+AAEL800033	AAEL000391	gene	Or28	odorant receptor
+AAEL800034	AAEL010409	gene	Or30	odorant receptor
+AAEL800035	AAEL013217	gene	Or31	odorant receptor
+AAEL800036	AAEL017362	gene	Or33	odorant receptor
+AAEL800037	AAEL003395	gene	Or34	odorant receptor
+AAEL800038	AAEL015310	gene	Or35	odorant receptor - partial
+AAEL800039	AAEL016981	gene	Or36	odorant receptor
+AAEL800040	AAEL003369	gene	Or37	odorant receptor
+AAEL800041	AAEL006345	gene	Or39	odorant receptor - partial
+AAEL800042	AAEL005767	gene	Or40	odorant receptor
+AAEL800043	AAEL003045	gene	Or41	odorant receptor
+AAEL800044	AAEL000616	gene	Or42	odorant receptor
+AAEL800045	AAEL012141	gene	Or43	odorant receptor
+AAEL800046	AAEL006465	gene	Or44	odorant receptor
+AAEL800047	AAEL000613	gene	Or45	odorant receptor
+AAEL800048	AAEL017174	gene	Or46	odorant receptor
+AAEL800049	AAEL017079	gene	Or47	odorant receptor
+AAEL800050	AAEL011895	gene	Or48	odorant receptor
+AAEL800051	AAEL001303	gene	Or49	odorant receptor
+AAEL800052	AAEL010426	gene	Or50	odorant receptor
+AAEL800053	AAEL013507	gene	Or52	odorant receptor
+AAEL800055	AAEL010415	gene	Or55	odorant receptor
+AAEL800056	AAEL017534	gene	Or56	odorant receptor
+AAEL800057	AAEL006202	gene	Or58	odorant receptor
+AAEL800058	AAEL001342	gene	Or59	odorant receptor
+AAEL800059	AAEL017041	gene	Or60	odorant receptor
+AAEL800060	AAEL017277	gene	Or61	odorant receptor
+AAEL800061	AAEL011796	gene	Or62	odorant receptor
+AAEL800062	AAEL000628	gene	Or63	odorant receptor
+AAEL800063	AAEL015506	gene	Or65	odorant receptor
+AAEL800064	AAEL017227	gene	Or66	odorant receptor
+AAEL800065	AAEL017260	gene	Or67	odorant receptor
+AAEL800066	AAEL001221	gene	Or69	odorant receptor
+AAEL800067	AAEL001224	gene	Or70	odorant receptor
+AAEL800068	AAEL017564	gene	Or71	odorant receptor
+AAEL800069	AAEL017129	gene	Or72	odorant receptor
+AAEL800070	AAEL006195	gene	Or74	odorant receptor
+AAEL800071	AAEL013419	gene	Or75	odorant receptor
+AAEL800072	AAEL013418	gene	Or76	odorant receptor
+AAEL800073	AAEL013423	gene	Or78	odorant receptor
+AAEL800074	AAEL013420	gene	Or79	odorant receptor
+AAEL800075	AAEL017221	gene	Or80	odorant receptor
+AAEL800076	AAEL017305	gene	Or81	odorant receptor
+AAEL800077	AAEL017043	gene	Or84	odorant receptor
+AAEL800078	AAEL004218	gene	Or85	odorant receptor
+AAEL800079	AAEL017246	gene	Or86	odorant receptor - partial
+AAEL800080	AAEL017347	gene	Or87	odorant receptor
+AAEL800081	AAEL014197	gene	Or88	odorant receptor
+AAEL800082	AAEL017125	gene	Or89	odorant receptor
+AAEL800083	AAEL017037	gene	Or90	odorant receptor
+AAEL800084	AAEL017149	gene	Or91	odorant receptor - partial
+AAEL800085	AAEL017065	gene	Or92	odorant receptor
+AAEL800086	AAEL017296	gene	Or93	odorant receptor
+AAEL800087	AAEL017201	gene	Or94	odorant receptor
+AAEL800088	AAEL017495	gene	Or95	odorant receptor
+AAEL800089	AAEL017427	gene	Or96	odorant receptor
+AAEL800090	AAEL017000	gene	Or97	odorant receptor - partial
+AAEL800091	AAEL017463	gene	Or98	odorant receptor
+AAEL800092	AAEL017236	gene	Or99	odorant receptor
+AAEL800093	AAEL011409	gene	Or100	odorant receptor
+AAEL800094	AAEL017050	gene	Or101	odorant receptor
+AAEL800095	AAEL017143	gene	Or102	odorant receptor
+AAEL800096	AAEL017505	gene	Or103	odorant receptor
+AAEL800097	AAEL016966	gene	Or104	odorant receptor
+AAEL800098	AAEL017014	gene	Or105	odorant receptor
+AAEL800099	AAEL017105	gene	Or106	odorant receptor
+AAEL800100	AAEL017316	gene	Or107	odorant receptor
+AAEL800101	AAEL017028	gene	Or109	odorant receptor
+AAEL800102	AAEL016983	gene	Or110	odorant receptor
+AAEL800103	AAEL017178	gene	Or111	odorant receptor
+AAEL800104	AAEL017123	gene	Or113	odorant receptor
+AAEL800105	AAEL017219	gene	Or114	odorant receptor
+AAEL800106	AAEL017361	gene	Or115	odorant receptor
+AAEL800107	AAEL017377	gene	Or117	odorant receptor
+AAEL800108	AAEL017009	gene	Or119	odorant receptor
+AAEL800109	AAEL017104	gene	Or121	odorant receptor
+AAEL800110	AAEL013563	gene	Or122	odorant receptor
+AAEL800111	AAEL017537	gene	Or123	odorant receptor
+AAEL800112	AAEL001617	gene	Or124	odorant receptor
+AAEL800113	AAEL013893	gene	Or125	odorant receptor
+AAEL800114	AAEL017370	gene	Or126	odorant receptor - partial
+AAEL800115	AAEL017271	gene	Or127	odorant receptor - partial
+AAEL800116	AAEL017285	gene	Or130	odorant receptor - partial
+AAEL800117	AAEL009600	gene	ECR	Ecdysone receptor isoform A  Nuclear receptor
+AAEL800118	AAEL007397	gene	E75	Ecdysone-induced protein 75B isoform A Nuclear receptor
+AAEL800119	AAEL000327	gene	E78	Ecdysone-induced protein 78C  Nuclear receptor
+AAEL800120	AAEL007202	gene	HR96	Hormone receptor-like in 96  nuclear receptor
+AAEL800121	AAEL011323	gene	HNF4	Hepatocyte nuclear factor 4 isoform A  nuclear receptor
+AAEL800122	AAEL000395	gene	USP	Ultra spiracleisoform A  nuclear receptor
+AAEL800123	AAEL002765	gene	SVP	Sevenup  nuclear receptor
+AAEL800124	AAEL008043	gene	PNRLIKE	PNR-like  nuclear receptor
+AAEL800125	AAEL002062	gene	BETAFTZF1	Betha Ftz transcription factor isoform A (nuclear receptor)
+AAEL800126	AAEL005850	gene	HR4	Hormone receptor-like in 4 (nuclear receptor)
+AAEL800127	AAEL007350	gene	HR83	Hormone receptor-like in 83 (Nuclear receptor)
+AAEL800129	AAEL014148	gene	CASPL1	Caspase (Long).
+AAEL800130	AAEL011562	gene	CASPL2	Caspase (Long).
+AAEL800131	AAEL012143	gene	CASPS7	Caspase (Short).
+AAEL800132	AAEL014348	gene	CASPS8	Caspase (Short).
+AAEL800133	AAEL005963	gene	CASPS15	Caspase (Short).
+AAEL800134	AAEL005956	gene	CASPS16	Caspase (Short).
+AAEL800136	AAEL003439	gene	CASPS18	Caspase (Short).
+AAEL800137	AAEL003444	gene	CASPS19	caspase (Short)
+AAEL800139	AAEL013407	gene	CAT1	catalase
+AAEL800141	AAEL004823	gene	MNSOD1	manganese-iron (Mn-Fe) superoxide dismutase.
+AAEL800142	AAEL005108	gene	MNSOD2	manganese-iron (Mn-Fe) superoxide dismutase
+AAEL800143	AAEL014091	gene	CUSOD1	copper-zinc (Cu-Zn) superoxide dismutase
+AAEL800144	AAEL006271	gene	CUSOD2	copper-zinc (Cu-Zn) superoxide dismutase
+AAEL800145	AAEL011498	gene	CUSOD3	copper-zinc (Cu-Zn) superoxide dismutase
+AAEL800146	AAEL000259	gene	CUSOD4	copper-zinc (Cu-Zn) superoxide dismutase
+AAEL800147	AAEL003541	gene	GALE1	galectin
+AAEL800148	AAEL012135	gene	GALE2	galectin
+AAEL800149	AAEL004196	gene	GALE3	galectin
+AAEL800150	AAEL003844	gene	GALE5	galectin
+AAEL800151	AAEL005294	gene	GALE6A	galectin
+AAEL800152	AAEL012003	gene	GALE6B	galectin
+AAEL800153	AAEL005293	gene	GALE8A	galectin
+AAEL800154	AAEL012001	gene	GALE8B	galectin
+AAEL800155	AAEL003840	gene	GALE11	galectin
+AAEL800156	AAEL009842	gene	GALE12	galectin
+AAEL800157	AAEL009845	gene	GALE13	galectin
+AAEL800158	AAEL009850	gene	GALE14	galectin
+AAEL800159	AAEL007626	gene	GNBPA1	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800160	AAEL000652	gene	GNBPA2	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800161	AAEL003889	gene	GNBPB1	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800162	AAEL009176	gene	GNBPB3	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800163	AAEL009178	gene	GNBPB4	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800164	AAEL003894	gene	GNBPB5	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800165	AAEL007064	gene	GNBPB6	Gram-Negative Binding Protein (GNBP)  or Beta-1 3-Glucan Binding Protein (BGBP).
+AAEL800166	AAEL009074	gene	IAP1	Inhibitor of Apoptosis (IAP)  containing Baculoviral IAP Repeat(s) (BIR domains).
+AAEL800167	AAEL006633	gene	IAP2	Inhibitor of Apoptosis (IAP)  containing Baculoviral IAP Repeat(s) (BIR domains).
+AAEL800168	AAEL014251	gene	IAP5	Inhibitor of Apoptosis (IAP)  containing Baculoviral IAP Repeat(s) (BIR domains).
+AAEL800169	AAEL012446	gene	IAP6	Inhibitor of Apoptosis (IAP)  containing Baculoviral IAP Repeat(s) (BIR domains).
+AAEL800170	AAEL012512	gene	IAP9	Inhibitor of Apoptosis (IAP)  containing Baculoviral IAP Repeat(s) (BIR domains).
+AAEL800171	AAEL017132	gene	LYSC4	C-Type Lysozyme (Lys-C).
+AAEL800172	AAEL005988	gene	LYSC6	C-Type Lysozyme (multi-lysozyme domain protein).
+AAEL800173	AAEL010100	gene	LYSC7A	C-Type Lysozyme.
+AAEL800174	AAEL015404	gene	LYSC7B	C-Type Lysozyme (Lys-B).
+AAEL800175	AAEL009670	gene	LYSC9	C-Type Lysozyme (Lys-D).
+AAEL800176	AAEL003712	gene	LYSC10	C-Type Lysozyme (Lys-E).
+AAEL800177	AAEL003723	gene	LYSC11	C-Type Lysozyme (Lys-A).
+AAEL800178	AAEL012380	gene	PGRPLA	Peptidoglycan Recognition Protein (Long)
+AAEL800179	AAEL010171	gene	PGRPLB	peptidoglycan recognition protein (Long)
+AAEL800180	AAEL014640	gene	PGRPLC	Peptidoglycan Recognition Protein (Long)
+AAEL800181	AAEL011608	gene	PGRPLD	Peptidoglycan Recognition Protein (Long)
+AAEL800182	AAEL013112	gene	PGRPLE	Peptidoglycan Recognition Protein (Long)
+AAEL800183	AAEL009474	gene	PGRPS1	Peptidoglycan Recognition Protein (Short)
+AAEL800184	AAEL017056	gene	PGRPS4	Peptidoglycan Recognition Protein (Short)
+AAEL800187	AAEL015308	gene	SCRAL1	Class A Scavenger Receptor (SRCR domain) with Lysyl Oxidase domain.
+AAEL800188	AAEL009192	gene	SCRASP1	Class A Scavenger Receptor (SRCR domain) with Serine Protease domain.
+AAEL800189	AAEL010655	gene	SCRASP2	Class A Scavenger Receptor (SRCR domain) with Serine Protease domain.
+AAEL800191	AAEL005374	gene	SCRB1	Class B Scavenger Receptor (CD36 domain).
+AAEL800192	AAEL005979	gene	SCRB3	Class B Scavenger Receptor (CD36 domain).
+AAEL800193	AAEL011222	gene	SCRB5	Class B Scavenger Receptor (CD36 domain).
+AAEL800194	AAEL002741	gene	SCRB6	Class B Scavenger Receptor (CD36 domain).
+AAEL800195	AAEL000234	gene	SCRB7	Class B Scavenger Receptor (CD36 domain).
+AAEL800196	AAEL000227	gene	SCRB8	Class B Scavenger Receptor (CD36 domain).
+AAEL800197	AAEL000256	gene	SCRB9	Class B Scavenger Receptor (CD36 domain).
+AAEL800198	AAEL007748	gene	SCRB10	Class B Scavenger Receptor (CD36 domain).
+AAEL800199	AAEL005981	gene	SCRB16	Class B Scavenger Receptor (CD36 domain).
+AAEL800200	AAEL008370	gene	SCRB17	Class B Scavenger Receptor (CD36 domain).
+AAEL800201	AAEL009420	gene	SCRBQ1	Class B Scavenger Receptor (CD36 domain).
+AAEL800202	AAEL009423	gene	SCRBQ2	Class B Scavenger Receptor (CD36 domain).
+AAEL800203	AAEL009432	gene	SCRBQ3	Class B Scavenger Receptor (CD36 domain).
+AAEL800204	AAEL006355	gene	SCRC1	Class C Scavenger Receptor (Sushi/SCR/CCP  MAM  and Somatomedin B domains).
+AAEL800205	AAEL006361	gene	SCRC2	Class C Scavenger Receptor (Sushi/SCR/CCP  MAM  and Somatomedin B domains).
+AAEL800206	AAEL005670	gene	SRPN1	Serine Protease Inhibitor (serpin)  likely cleavage at K/F.
+AAEL800207	AAEL005673	gene	SRPN2	Serine Protease Inhibitor (serpin)  likely cleavage at K/F.
+AAEL800208	AAEL005665	gene	SRPN3	Serine Protease Inhibitor (serpin)  likely cleavage at T/I.
+AAEL800209	AAEL013936	gene	SRPN4	Serine Protease Inhibitor (serpin)  likely cleavage at I/S. Transcript A.
+AAEL800210	AAEL014141	gene	SRPN5	Serine Protease Inhibitor (serpin)  likely cleavage at S/M.
+AAEL800211	AAEL010769	gene	SRPN6	Serine Protease Inhibitor (serpin)  likely cleavage at S/A.
+AAEL800212	AAEL002699	gene	SRPN7	Serine Protease Inhibitor (serpin)  likely cleavage at R/S.
+AAEL800213	AAEL011777	gene	SRPN8	Serine Protease Inhibitor (serpin)  likely cleavage at K/A.
+AAEL800214	AAEL008364	gene	SRPN9	Serine Protease Inhibitor (serpin)  likely cleavage at S/S.
+AAEL800215	AAEL007765	gene	SRPN10	Serine Protease Inhibitor (serpin)  likely cleavage at K/R. Transcript A.
+AAEL800216	AAEL003686	gene	SRPN11	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800217	AAEL003653	gene	SRPN12	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800218	AAEL002731	gene	SRPN14	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800219	AAEL014138	gene	SRPN16	Serine Protease Inhibitor (serpin)  likely cleavage at S/L.
+AAEL800220	AAEL003697	gene	SRPN17	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800221	AAEL006137	gene	SRPN19	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800222	AAEL002720	gene	SRPN20	Serine Protease Inhibitor (serpin)  likely cleavage at V/V.
+AAEL800223	AAEL002730	gene	SRPN21	Serine Protease Inhibitor (serpin)  likely cleavage at R/V.
+AAEL800224	AAEL002715	gene	SRPN22	Serine Protease Inhibitor (serpin)  likely cleavage at R/S.
+AAEL800225	AAEL002704	gene	SRPN23	Serine Protease Inhibitor (serpin) homologue
+AAEL800226	AAEL017249	gene	SRPN24	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800227	AAEL007420	gene	SRPN25	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800228	AAEL003182	gene	SRPN26	Serine Protease Inhibitor (serpin) homologue - unlikely to be inhibitory.
+AAEL800229	AAEL007613	gene	TOLL1A	Toll-like receptor
+AAEL800230	AAEL003507	gene	TOLL1B	Toll-like receptor
+AAEL800231	AAEL017523	gene	TOLL4	Toll-like receptor
+AAEL800232	AAEL007619	gene	TOLL5A	Toll-like receptor
+AAEL800233	AAEL000057	gene	TOLL5B	Toll-like receptor
+AAEL800234	AAEL000671	gene	TOLL6	Toll-like receptor
+AAEL800235	AAEL002583	gene	TOLL7	Toll-like receptor
+AAEL800236	AAEL000633	gene	TOLL8	Toll-like receptor
+AAEL800237	AAEL013441	gene	TOLL9A	Toll-like receptor
+AAEL800238	AAEL011734	gene	TOLL9B	Toll-like receptor
+AAEL800239	AAEL004000	gene	TOLL10	Toll-like receptor
+AAEL800240	AAEL009551	gene	TOLL11	Toll-like receptor
+AAEL800242	AAEL002005	gene	CYP12F6	cytochrome P450
+AAEL800243	AAEL002031	gene	CYP12F7	cytochrome P450
+AAEL800244	AAEL006827	gene	CYP12F8	cytochrome P450
+AAEL800245	AAEL004870	gene	CYP18A1	cytochrome P450
+AAEL800246	AAEL014594	gene	CYP301A1	cytochrome P450
+AAEL800247	AAEL015655	gene	CYP302A1	cytochrome P450
+AAEL800248	AAEL012144	gene	CYP303A1	cytochrome P450
+AAEL800249	AAEL014412	gene	CYP304B2	cytochrome P450
+AAEL800250	AAEL014411	gene	CYP304B3	cytochrome P450
+AAEL800251	AAEL014413	gene	CYP304C1	cytochrome P450
+AAEL800252	AAEL002043	gene	CYP305A5	cytochrome P450
+AAEL800253	AAEL002071	gene	CYP305A6	cytochrome P450
+AAEL800254	AAEL004888	gene	CYP306A1	cytochrome P450
+AAEL800255	AAEL009762	gene	CYP307A1	cytochrome P450
+AAEL800256	AAEL006875	gene	CYP307B1	cytochrome P450
+AAEL800257	AAEL010946	gene	CYP314A1	cytochrome P450
+AAEL800258	AAEL011850	gene	CYP315A1	cytochrome P450
+AAEL800259	AAEL004012	gene	CYP325AA1	cytochrome P450
+AAEL800260	AAEL000338	gene	CYP325E3	cytochrome P450
+AAEL800261	AAEL012766	gene	CYP325G2	cytochrome P450
+AAEL800262	AAEL012772	gene	CYP325G3	cytochrome P450
+AAEL800263	AAEL005771	gene	CYP325K2	cytochrome P450
+AAEL800264	AAEL005788	gene	CYP325K3	cytochrome P450
+AAEL800265	AAEL011770	gene	CYP325L1	cytochrome P450
+AAEL800266	AAEL012773	gene	CYP325M1	cytochrome P450
+AAEL800267	AAEL012769	gene	CYP325M2	cytochrome P450
+AAEL800268	AAEL012765	gene	CYP325M3	cytochrome P450
+AAEL800269	AAEL011769	gene	CYP325M4	cytochrome P450
+AAEL800270	AAEL011761	gene	CYP325M5	cytochrome P450
+AAEL800271	AAEL012770	gene	CYP325N1	cytochrome P450
+AAEL800272	AAEL012762	gene	CYP325N2	cytochrome P450
+AAEL800274	AAEL006044	gene	CYP325Q1	cytochrome P450
+AAEL800275	AAEL006058	gene	CYP325Q2	cytochrome P450
+AAEL800276	AAEL005775	gene	CYP325R1	cytochrome P450
+AAEL800277	AAEL000326	gene	CYP325S1	cytochrome P450
+AAEL800279	AAEL000357	gene	CYP325S3	cytochrome P450
+AAEL800280	AAEL000320	gene	CYP325T1	cytochrome P450
+AAEL800281	AAEL012761	gene	CYP325T2	cytochrome P450
+AAEL800282	AAEL017215	gene	CYP325U1	cytochrome P450
+AAEL800283	AAEL017136	gene	CYP325V1	cytochrome P450
+AAEL800285	AAEL005695	gene	CYP325X1	cytochrome P450
+AAEL800286	AAEL005696	gene	CYP325X2	cytochrome P450
+AAEL800287	AAEL005700	gene	CYP325X4	cytochrome P450
+AAEL800288	AAEL006257	gene	CYP325Y1	cytochrome P450
+AAEL800289	AAEL017165	gene	CYP325Y2	cytochrome P450
+AAEL800290	AAEL006246	gene	CYP325Y3	cytochrome P450
+AAEL800291	AAEL010273	gene	CYP325Z1	cytochrome P450
+AAEL800292	AAEL003763	gene	CYP329B1	cytochrome P450
+AAEL800293	AAEL008638	gene	CYP49A1	cytochrome P450
+AAEL800294	AAEL010154	gene	CYP4AR2	cytochrome P450
+AAEL800295	AAEL012266	gene	CYP4C38	cytochrome P450
+AAEL800296	AAEL008017	gene	CYP4C50	cytochrome P450
+AAEL800297	AAEL008018	gene	CYP4C51	cytochrome P450
+AAEL800298	AAEL008023	gene	CYP4C52	cytochrome P450
+AAEL800299	AAEL007816	gene	CYP4D23	cytochrome P450
+AAEL800300	AAEL007815	gene	CYP4D24	cytochrome P450
+AAEL800301	AAEL007795	gene	CYP4D37	cytochrome P450
+AAEL800302	AAEL007807	gene	CYP4D38	cytochrome P450
+AAEL800303	AAEL007808	gene	CYP4D39	cytochrome P450
+AAEL800304	AAEL008345	gene	CYP4G35	cytochrome P450
+AAEL800305	AAEL004054	gene	CYP4G36	cytochrome P450
+AAEL800306	AAEL003380	gene	CYP4H28	cytochrome P450
+AAEL800307	AAEL007830	gene	CYP4H29	cytochrome P450
+AAEL800308	AAEL003399	gene	CYP4H30	cytochrome P450
+AAEL800309	AAEL002085	gene	CYP4H31	cytochrome P450
+AAEL800310	AAEL007812	gene	CYP4H32	cytochrome P450
+AAEL800311	AAEL013798	gene	CYP4H33	cytochrome P450
+AAEL800312	AAEL013555	gene	CYP4J13	cytochrome P450
+AAEL800313	AAEL013554	gene	CYP4J14	cytochrome P450
+AAEL800314	AAEL013556	gene	CYP4J15	cytochrome P450
+AAEL800315	AAEL014019	gene	CYP4J16	cytochrome P450
+AAEL800317	AAEL007798	gene	CYP4K3	cytochrome P450
+AAEL800318	AAEL012492	gene	CYP6AA5	cytochrome P450
+AAEL800319	AAEL007024	gene	CYP6AG3	cytochrome P450
+AAEL800320	AAEL007010	gene	CYP6AG4	cytochrome P450
+AAEL800321	AAEL006984	gene	CYP6AG5	cytochrome P450
+AAEL800322	AAEL006992	gene	CYP6AG6	cytochrome P450
+AAEL800323	AAEL006989	gene	CYP6AG7	cytochrome P450
+AAEL800324	AAEL015654	gene	CYP6AG8	cytochrome P450
+AAEL800325	AAEL007473	gene	CYP6AH1	cytochrome P450
+AAEL800326	AAEL004941	gene	CYP6AK1	cytochrome P450
+AAEL800327	AAEL008889	gene	CYP6AL1	cytochrome P450
+AAEL800328	AAEL009656	gene	CYP6AL3	cytochrome P450
+AAEL800329	AAEL014893	gene	CYP6BB2	cytochrome P450
+AAEL800330	AAEL017539	gene	CYP6BY1	cytochrome P450
+AAEL800331	AAEL012494	gene	CYP6BZ1	cytochrome P450
+AAEL800332	AAEL014680	gene	CYP6CA1	cytochrome P450
+AAEL800333	AAEL002046	gene	CYP6CB1	cytochrome P450
+AAEL800335	AAEL014890	gene	CYP6CC1	cytochrome P450
+AAEL800336	AAEL005006	gene	CYP6CD1	cytochrome P450
+AAEL800337	AAEL014678	gene	CYP6F2	cytochrome P450
+AAEL800338	AAEL014684	gene	CYP6F3	cytochrome P450
+AAEL800339	AAEL009125	gene	CYP6M10	cytochrome P450
+AAEL800340	AAEL009127	gene	CYP6M11	cytochrome P450
+AAEL800341	AAEL009117	gene	CYP6M5	cytochrome P450
+AAEL800342	AAEL009128	gene	CYP6M6	cytochrome P450
+AAEL800343	AAEL017297	gene	CYP6M9	cytochrome P450
+AAEL800344	AAEL009138	gene	CYP6N11	cytochrome P450
+AAEL800345	AAEL009124	gene	CYP6N12	cytochrome P450
+AAEL800346	AAEL009137	gene	CYP6N13	cytochrome P450
+AAEL800347	AAEL009133	gene	CYP6N14	cytochrome P450
+AAEL800349	AAEL010151	gene	CYP6N16	cytochrome P450
+AAEL800350	AAEL010158	gene	CYP6N17	cytochrome P450
+AAEL800351	AAEL009126	gene	CYP6N6	cytochrome P450
+AAEL800352	AAEL009121	gene	CYP6N9	cytochrome P450
+AAEL800353	AAEL012491	gene	CYP6P12	cytochrome P450
+AAEL800354	AAEL009120	gene	CYP6S3	cytochrome P450
+AAEL800355	AAEL009132	gene	CYP6Y3	cytochrome P450
+AAEL800356	AAEL009123	gene	CYP6Z6	cytochrome P450
+AAEL800357	AAEL009130	gene	CYP6Z7	cytochrome P450
+AAEL800358	AAEL009131	gene	CYP6Z8	cytochrome P450
+AAEL800359	AAEL009129	gene	CYP6Z9	cytochrome P450
+AAEL800360	AAEL003748	gene	CYP9AE1	cytochrome P450
+AAEL800361	AAEL006798	gene	CYP9J10	cytochrome P450
+AAEL800362	AAEL006795	gene	CYP9J15	cytochrome P450
+AAEL800363	AAEL006815	gene	CYP9J16	cytochrome P450
+AAEL800364	AAEL006784	gene	CYP9J17	cytochrome P450
+AAEL800365	AAEL006804	gene	CYP9J18	cytochrome P450
+AAEL800366	AAEL006810	gene	CYP9J19	cytochrome P450
+AAEL800367	AAEL006805	gene	CYP9J2	cytochrome P450
+AAEL800368	AAEL006814	gene	CYP9J20	cytochrome P450
+AAEL800369	AAEL017217	gene	CYP9J21p	cytochrome P450
+AAEL800370	AAEL006802	gene	CYP9J22	cytochrome P450
+AAEL800371	AAEL014615	gene	CYP9J23	cytochrome P450
+AAEL800372	AAEL014613	gene	CYP9J24	cytochrome P450
+AAEL800373	AAEL014609	gene	CYP9J26	cytochrome P450
+AAEL800374	AAEL014616	gene	CYP9J27	cytochrome P450
+AAEL800375	AAEL014617	gene	CYP9J28	cytochrome P450
+AAEL800376	AAEL014610	gene	CYP9J29	cytochrome P450
+AAEL800377	AAEL014603	gene	CYP9J30	cytochrome P450
+AAEL800378	AAEL002633	gene	CYP9J31	cytochrome P450
+AAEL800379	AAEL008846	gene	CYP9J32	cytochrome P450
+AAEL800380	AAEL002638	gene	CYP9J6	cytochrome P450
+AAEL800381	AAEL014606	gene	CYP9J7	cytochrome P450
+AAEL800382	AAEL006811	gene	CYP9J8	cytochrome P450
+AAEL800383	AAEL006793	gene	CYP9J9	cytochrome P450
+AAEL800384	AAEL001320	gene	CYP9M4	cytochrome P450
+AAEL800386	AAEL001312	gene	CYP9M6	cytochrome P450
+AAEL800387	AAEL001292	gene	CYP9M7	cytochrome P450
+AAEL800388	AAEL009591	gene	CYP9M8	cytochrome P450
+AAEL800389	AAEL001807	gene	CYP9M9	cytochrome P450
+AAEL800390	AAEL001061	gene	GSTD1	glutathione transferase
+AAEL800391	AAEL001078	gene	GSTD2	glutathione transferase
+AAEL800392	AAEL001059	gene	GSTD3	glutathione transferase
+AAEL800393	AAEL001054	gene	GSTD4	glutathione transferase
+AAEL800394	AAEL001071	gene	GSTD5	glutathione transferase
+AAEL800395	AAEL010591	gene	GSTD6	glutathione transferase
+AAEL800396	AAEL001090	gene	GSTD7	glutathione transferase
+AAEL800397	AAEL010582	gene	GSTD11	glutathione transferase
+AAEL800398	AAEL007954	gene	GSTE1	glutathione transferase
+AAEL800399	AAEL007951	gene	GSTE2	glutathione transferase
+AAEL800400	AAEL007947	gene	GSTE3	glutathione transferase
+AAEL800401	AAEL007962	gene	GSTE4	glutathione transferase
+AAEL800402	AAEL007964	gene	GSTE5	glutathione transferase
+AAEL800403	AAEL007946	gene	GSTE6	glutathione transferase
+AAEL800404	AAEL007948	gene	GSTE7	glutathione transferase
+AAEL800405	AAEL007955	gene	GSTE8	glutathione transferase
+AAEL800406	AAEL017085	gene	GSTO1	glutathione transferase
+AAEL800407	AAEL011741	gene	GSTS1	glutathione transferase
+AAEL800408	AAEL009017	gene	GSTT1	glutathione transferase
+AAEL800409	AAEL009016	gene	GSTT2	glutathione transferase
+AAEL800410	AAEL009020	gene	GSTT3	glutathione transferase
+AAEL800411	AAEL004229	gene	GSTT4	glutathione transferase
+AAEL800412	AAEL011752	gene	GSTI1	glutathione transferase
+AAEL800413	AAEL000092	gene	GSTX1	glutathione transferase
+AAEL800414	AAEL010500	gene	GSTX2	glutathione transferase
+AAEL800415	AAEL011934	gene	GSTZ1	glutathione transferase
+AAEL800418	AAEL003389	gene	ATT	attacin anti-microbial peptide
+AAEL800419	AAEL000627	gene	CECA	cecropin anti-microbial peptide
+AAEL800420	AAEL004223	gene	CECB	cecropin anti-microbial peptide
+AAEL800421	AAEL000598	gene	CECD	cecropin anti-microbial peptide
+AAEL800422	AAEL000611	gene	CECE	cecropin anti-microbial peptide
+AAEL800423	AAEL000625	gene	CECF	cecropin anti-microbial peptide
+AAEL800424	AAEL015515	gene	CECG	cecropin anti-microbial peptide
+AAEL800425	AAEL017211	gene	CECH	cecropin anti-microbial peptide
+AAEL800426	AAEL000775	gene	CECI	cecropin anti-microbial peptide
+AAEL800427	AAEL000777	gene	CECJ	cecropin anti-microbial peptide
+AAEL800428	AAEL000621	gene	CECN	cecropin anti-microbial peptide
+AAEL800429	AAEL003841	gene	DEFA	defensin anti-microbial peptide
+AAEL800430	AAEL003832	gene	DEFC	defensin anti-microbial peptide
+AAEL800431	AAEL003857	gene	DEFD	defensin anti-microbial peptide
+AAEL800432	AAEL003849	gene	DEFE	defensin anti-microbial peptide
+AAEL800433	AAEL004522	gene	GAM1	gambicin anti-microbial peptide
+AAEL800434	AAEL017536	gene	GRRP	holotricin  glycine rich repeat protein (GRRP)  anti-microbial peptide
+AAEL800435	AAEL004833	gene	DPT1	diptericin  anti-microbial peptide
+AAEL800436	AAEL011402	gene	CTL5	C-Type Lectin (CTL).
+AAEL800437	AAEL003119	gene	CTL6	C-Type Lectin (CTL).
+AAEL800439	AAEL010992	gene	CTL8	C-Type Lectin (CTL).
+AAEL800440	AAEL013748	gene	CTL9	C-Type Lectin (CTL).
+AAEL800441	AAEL009338	gene	CTL10	C-Type Lectin (CTL).
+AAEL800442	AAEL008299	gene	CTL11	C-Type Lectin (CTL).
+AAEL800443	AAEL008681	gene	CTL12	C-Type Lectin (CTL).
+AAEL800444	AAEL004679	gene	CTL13	C-Type Lectin (CTL).
+AAEL800445	AAEL011453	gene	CTL14	C-Type Lectin (CTL).
+AAEL800446	AAEL012353	gene	CTL15	C-Type Lectin (CTL).
+AAEL800447	AAEL000533	gene	CTL16	C-Type Lectin (CTL).
+AAEL800448	AAEL011446	gene	CTL17	C-Type Lectin (CTL).
+AAEL800449	AAEL005482	gene	CTL18	C-Type Lectin (CTL).
+AAEL800450	AAEL011404	gene	CTL19	C-Type Lectin (CTL).
+AAEL800451	AAEL011407	gene	CTL20	C-Type Lectin (CTL).
+AAEL800452	AAEL011408	gene	CTL21	C-Type Lectin (CTL).
+AAEL800453	AAEL011609	gene	CTL22	C-Type Lectin (CTL).
+AAEL800454	AAEL006456	gene	CTL23	C-Type Lectin (CTL).
+AAEL800455	AAEL002524	gene	CTL24	C-Type Lectin (CTL).
+AAEL800456	AAEL000556	gene	CTL25	C-Type Lectin (CTL).
+AAEL800457	AAEL011078	gene	CTLGA1	C-Type Lectin (CTL) - galactose binding.
+AAEL800458	AAEL013853	gene	CTLGA2	C-Type Lectin (CTL) - galactose binding.
+AAEL800459	AAEL011070	gene	CTLGA3	C-Type Lectin (CTL) - galactose binding.
+AAEL800460	AAEL017484	gene	CTLGA4	C-Type Lectin (CTL) - galactose binding.
+AAEL800461	AAEL005641	gene	CTLGA5	C-Type Lectin (CTL) - galactose binding.
+AAEL800462	AAEL009209	gene	CTLGA6	C-Type Lectin (CTL) - galactose binding.
+AAEL800463	AAEL017265	gene	CTLGA7	C-Type Lectin (CTL) - galactose binding.
+AAEL800464	AAEL011610	gene	CTLGA8	C-Type Lectin (CTL) - galactose binding.
+AAEL800465	AAEL014385	gene	CTLGA9	C-Type Lectin (CTL) - galactose binding.
+AAEL800466	AAEL011612	gene	CTLMA6	C-Type Lectin (CTL) - mannose binding. Transcript A
+AAEL800467	AAEL011079	gene	CTLMA10	C-Type Lectin (CTL) - mannose binding.
+AAEL800468	AAEL000543	gene	CTLMA11	C-Type Lectin (CTL) - mannose binding.
+AAEL800469	AAEL011455	gene	CTLMA12	C-Type Lectin (CTL) - mannose binding
+AAEL800470	AAEL011621	gene	CTLMA13	C-Type Lectin (CTL) - mannose binding.
+AAEL800471	AAEL014382	gene	CTLMA14	C-Type Lectin (CTL) - mannose binding.
+AAEL800472	AAEL000563	gene	CTLMA15	C-Type Lectin (CTL) - mannose binding.
+AAEL800473	AAEL000283	gene	CTLMA16	C-Type Lectin (CTL) - mannose binding.
+AAEL800474	AAEL008929	gene	CTLSE1	C-Type Lectin (CTL) - selectin like.
+AAEL800475	AAEL014356	gene	CTLSE2	C-Type Lectin (CTL) - selectin like.
+AAEL800476	AAEL010083	gene	IMD	IMD pathway signalling  Immune Deficiency (Imd).
+AAEL800478	AAEL003245	gene	IKK1	IMD pathway signalling  I-Kappa-B Kinase 1 (IKK1  IKK-beta). (ird5 orthologue  immune response deficient 5)
+AAEL800479	AAEL012510	gene	IKK2	IMD pathway signalling  I-Kappa-B Kinase 2 (IKK2  IKK-gamma).
+AAEL800480	AAEL001932	gene	FADD	IMD pathway signalling  Fas-Associated Death Domain  (FADD).
+AAEL800481	AAEL012471	gene	DOME	JAKSTAT pathway signalling  Transmembrane Receptor  Domeless.
+AAEL800482	AAEL012553	gene	HOP	JAKSTAT pathway signalling  Janus Kinase  Hopscotch.
+AAEL800483	AAEL009692	gene	STAT1	JAKSTAT pathway signalling  Signal-Transducer and Activator of Transcription 1 (STAT1).
+AAEL800484	AAEL007642	gene	TUBE	TOLL pathway signalling.
+AAEL800485	AAEL011363	gene	TRAF6	TOLL pathway signalling  TNF Receptor-Associated Factor (TRAF).
+AAEL800486	AAEL006571	gene	PELLE	TOLL pathway signalling  Ser/Thr Kinase.
+AAEL800487	AAEL007768	gene	MYD	TOLL pathway signalling.
+AAEL800488	AAEL000709	gene	CACT	TOLL pathway signalling.
+AAEL800489	AAEL007696	gene	REL1A	TOLL pathway signalling  NF-kappaB Relish-like transcription factor
+AAEL800490	AAEL006930	gene	REL1B	TOLL pathway signalling  NF-kappaB Relish-like transcription factor
+AAEL800491	AAEL007624	gene	REL2	IMD pathway signalling  NF-kappaB Relish-like transcription factor
+AAEL800492	AAEL012069	gene	GPXH1	glutathione peroxidase
+AAEL800493	AAEL008397	gene	GPXH2	glutathione peroxidase
+AAEL800494	AAEL000495	gene	GPXH3	glutathione peroxidase
+AAEL800495	AAEL013528	gene	TPX1	Thioredoxin Peroxidase.
+AAEL800496	AAEL004112	gene	TPX2	Thioredoxin Peroxidase.
+AAEL800497	AAEL014548	gene	TPX3	Thioredoxin Peroxidase.
+AAEL800498	AAEL002309	gene	TPX4	Thioredoxin Peroxidase.
+AAEL800499	AAEL009051	gene	TPX5	Thioredoxin Peroxidase.
+AAEL800500	AAEL006014	gene	HPX1	heme peroxidase
+AAEL800501	AAEL013171	gene	HPX2	heme peroxidase
+AAEL800503	AAEL000376	gene	HPX4	heme peroxidase
+AAEL800504	AAEL002354	gene	HPX5	heme peroxidase
+AAEL800505	AAEL012481	gene	HPX6	heme peroxidase
+AAEL800506	AAEL004401	gene	HPX7	heme peroxidase
+AAEL800507	AAEL004388	gene	HPX8A	heme peroxidase
+AAEL800508	AAEL004390	gene	HPX8B	heme peroxidase
+AAEL800509	AAEL004386	gene	HPX8C	heme peroxidase
+AAEL800510	AAEL007563	gene	DUOX	Dual Oxidase: Peroxidase and NADPH-Oxidase domains.
+AAEL800511	AAEL003933	gene	DBLOX	Double Oxidase: Two Peroxidase domains.
+AAEL800557	AAEL007796	gene	CLIPD1	Clip-Domain Serine Protease  family D.
+AAEL800558	AAEL004979	gene	CLIPD2	Clip-Domain Serine Protease  family D.
+AAEL800559	AAEL002997	gene	CLIPD3	Clip-Domain Serine Protease  family D.
+AAEL800560	AAEL002124	gene	CLIPD6	Clip-Domain Serine Protease  family D
+AAEL800561	AAEL015439	gene	CLIPD7	Clip-Domain Serine Protease  family D.
+AAEL800562	AAEL000238	gene	CLIPD9	Clip-Domain Serine Protease  family D.
+AAEL800563	AAEL015109	gene	CLIPD10	Clip-Domain Serine Protease  family D.
+AAEL800564	AAEL005792	gene	CLIPE8	Clip-Domain Serine Protease  family E. Protease homologue.
+AAEL800565	AAEL001233	gene	CLIPE9	Clip-Domain Serine Protease  family E. Protease homologue.
+AAEL800566	AAEL010773	gene	CLIPE10	Clip-Domain Serine Protease  family E. Protease homologue.
+AAEL800567	AAEL005800	gene	CLIPE11	Clip-Domain Serine Protease  family E. Protease homologue.
+AAEL800568	AAEL005644	gene	CLIPE12	Clip-Domain Serine Protease  family E. Protease homologue.
+AAEL800569	AAEL013498	gene	PPO1	prophenoloxidase
+AAEL800570	AAEL013499	gene	PPO2	prophenoloxidase
+AAEL800571	AAEL011763	gene	PPO3	prophenoloxidase
+AAEL800572	AAEL013501	gene	PPO4	prophenoloxidase
+AAEL800573	AAEL013492	gene	PPO5	prophenoloxidase
+AAEL800574	AAEL014544	gene	PPO6	prophenoloxidase
+AAEL800575	AAEL013493	gene	PPO7	prophenoloxidase
+AAEL800576	AAEL013496	gene	PPO8	prophenoloxidase
+AAEL800577	AAEL014837	gene	PPO9	prophenoloxidase
+AAEL800578	AAEL011764	gene	PPO10	prophenoloxidase
+AAEL800579	AAEL000499	gene	SPZ1A	spaetzle-like cytokine
+AAEL800581	AAEL013433	gene	SPZ1C	spaetzle-like cytokine
+AAEL800582	AAEL001435	gene	SPZ2	spaetzle-like cytokine
+AAEL800583	AAEL008596	gene	SPZ3A	spaetzle-like cytokine
+AAEL800584	AAEL014950	gene	SPZ3B	spaetzle-like cytokine
+AAEL800585	AAEL007897	gene	SPZ4	spaetzle-like cytokine
+AAEL800586	AAEL001929	gene	SPZ5	spaetzle-like cytokine
+AAEL800587	AAEL012164	gene	SPZ6	spaetzle-like cytokine
+AAEL800613	AAEL004341	gene	CCEAE1O	Carboxy/choline esterase Alpha Esterase
+AAEL800614	AAEL007486	gene	CCEAE20	Carboxy/choline esterase Alpha Esterase
+AAEL800615	AAEL005113	gene	CCEAE1A	Carboxy/choline esterase Alpha Esterase
+AAEL800616	AAEL005112	gene	CCEAE3A	Carboxy/choline esterase Alpha Esterase
+AAEL800617	AAEL005101	gene	CCEAE4A	Carboxy/choline esterase Alpha Esterase
+AAEL800619	AAEL005122	gene	CCEAE6A	Carboxy/choline esterase Alpha Esterase
+AAEL800620	AAEL002367	gene	CCEAE1B	Carboxy/choline esterase Alpha Esterase
+AAEL800621	AAEL017553	gene	CCEAE2B	Carboxy/choline esterase Alpha Esterase
+AAEL800622	AAEL002385	gene	CCEAE3B	Carboxy/choline esterase Alpha Esterase
+AAEL800623	AAEL011944	gene	CCEAE3O	Carboxy/choline esterase Alpha Esterase
+AAEL800624	AAEL003195	gene	CCEAE1C	Carboxy/choline esterase Alpha Esterase
+AAEL800625	AAEL003196	gene	CCEAE2C	Carboxy/choline esterase Alpha Esterase
+AAEL800626	AAEL003181	gene	CCEAE3C	Carboxy/choline esterase Alpha Esterase
+AAEL800627	AAEL003187	gene	CCEAE4C	Carboxy/choline esterase Alpha Esterase
+AAEL800628	AAEL003201	gene	CCEAE5C	Carboxy/choline esterase Alpha Esterase
+AAEL800629	AAEL003198	gene	CCEAE6C	Carboxy/choline esterase Alpha Esterase
+AAEL800630	AAEL005210	gene	CCEJHE3F	Carboxy/choline esterase
+AAEL800631	AAEL005182	gene	CCEJHE4F	Carboxy/choline esterase
+AAEL800632	AAEL005198	gene	CCEJHE2F	Carboxy/choline esterase
+AAEL800633	AAEL015590	gene	CCEJHE1O	Carboxy/choline esterase
+AAEL800634	AAEL004323	gene	CCEJHE2O	Carboxy/choline esterase
+AAEL800638	AAEL005955	gene	CASPS17	caspase
+AAEL800639	AAEL017498	gene	CASPS21	caspase
+AAEL800641	AAEL004392	gene	IMP	IAP-antagonist Michelob_x-like Protein
+AAEL800642	AAEL000874	gene	ARK	Apaf-1 Related Killer
+AAEL800643	AAEL000590	gene	DNR1	Defense repressor 1
+AAEL800644	AAEL017181	gene	GPRMAC1	GPCR Muscarinic Acetylcholine Family
+AAEL800645	AAEL007832	gene	GPRMAC2	GPCR Muscarinic Acetylcholine Family
+AAEL800647	AAEL003920	gene	GPRDOP1	GPCR Dopamine Family
+AAEL800648	AAEL005834	gene	GPRDOP2	GPCR Dopamine Family
+AAEL800649	AAEL014373	gene	GPRDOP3_1	GPCR Dopamine Family
+AAEL800650	AAEL017166	gene	GPRDOP3_2	GPCR Dopamine Family
+AAEL800651	AAEL005945	gene	GPRDOP4	GPCR Dopamine Family
+AAEL800652	AAEL005952	gene	GPRDOP5	GPCR Dopamine Family
+AAEL800653	AAEL005681	gene	GPRHIS	GPCR Histamine Family
+AAEL800654	AAEL001606	gene	GPRMTN	GPCR Melatonin Family
+AAEL800655	AAEL014224	gene	GPROAR1	GPCR Octopamine/Tyramine Family
+AAEL800656	AAEL004398	gene	GPROAR2	GPCR Octopamine/Tyramine Family
+AAEL800658	AAEL016990	gene	GPROAR3B	GPCR Octopamine/Tyramine Family
+AAEL800659	AAEL004396	gene	GPROAR4	GPCR Octopamine/Tyramine Family
+AAEL800660	AAEL006844	gene	GPRTYR	GPCR Octopamine/Tyramine Family
+AAEL800661	AAEL008360	gene	GPR5HT1	GPCR Serotonin Family
+AAEL800662	AAEL017162	gene	GPR5HT2	GPCR serotonin family
+AAEL800663	AAEL017272	gene	GPR5HT3	GPCR Serotonin Family
+AAEL800665	AAEL016993	gene	GPR5HT4	GPCR Serotonin Family
+AAEL800666	AAEL011844	gene	GPR5HT5	GPCR Serotonin Family
+AAEL800668	AAEL015553	gene	GPR5HT6	GPCR Serotonin Family
+AAEL800670	AAEL002717	gene	GPR5HT8	GPCR Serotonin Family
+AAEL800671	AAEL017126	gene	GPR5HT9	GPCR serotonin family
+AAEL800672	AAEL004399	gene	GPRFSH	GPCR Glycoprotein Hormone Family
+AAEL800673	AAEL004777	gene	GPRGRK	Glycoprotein Hormone Family
+AAEL800674	AAEL005095	gene	GPRGPH	Glycoprotein Hormone Family
+AAEL800676	AAEL006076	gene	GPRALS2	GPCR Galanin/Allatostatin Family
+AAEL800677	AAEL012920	gene	GPRALS3	GPCR Galanin/Allatostatin Family
+AAEL800678	AAEL003473	gene	GPRGRP1	GPCRG astrin/Bombesin Family
+AAEL800680	AAEL017410	gene	GPRGRP2_2	GPCR Gastrin/Bombesin Family
+AAEL800681	AAEL016997	gene	GPRGRP2_3	GPCR Gastrin/Bombesin Family
+AAEL800683	AAEL017238	gene	GPRCCK1_2	GPCR Gastrin/Cholecystokinin Family
+AAEL800684	AAEL017152	gene	GPRCCK1_3	GPCR Gastrin/Cholecystokinin Family
+AAEL800687	AAEL011475	gene	GPRGNR2	GPCR Gonadotrophin Releasing Hormone Family
+AAEL800688	AAEL009673	gene	GPRGNR3	GPCR Gonadotrophin Releasing Hormone Family
+AAEL800690	AAEL004732	gene	GPRNPR2	GPCR Growth Hormone Secretagogue/Neurotensin/Neuromedin/Thyrotropin Releasing Hormone Family
+AAEL800691	AAEL006636	gene	GPRLLK1_1	GPCR Leukokinin Family
+AAEL800692	AAEL011026	gene	GPRLLK1_2	GPCR Leukokinin Family
+AAEL800693	AAEL017414	gene	GPRTAK1_1	GPCR Neurokinin/Tachykinin Family
+AAEL800694	AAEL017341	gene	GPRTAK1_2	GPCR Neurokinin/Tachykinin Family
+AAEL800695	AAEL017544	gene	GPRTAK1_3	GPCR Neurokinin/Tachykinin Family
+AAEL800696	AAEL006947	gene	GPRTAK2	GPCR Neurokinin/Tachykinin Family
+AAEL800697	AAEL003647	gene	GPRNPR3	GPCR Neurokinin/Tachykinin Family
+AAEL800698	AAEL008282	gene	GPRNPR4	GPCR Neurokinin/Tachykinin Family
+AAEL800699	AAEL008267	gene	GPRNPR5	GPCR Neurokinin/Tachykinin Family
+AAEL800701	AAEL010626	gene	GPRNPY2	GPCR Neuropeptide Y Family
+AAEL800702	AAEL007924	gene	GPRNPY3	GPCR Neuropeptide Y Family
+AAEL800703	AAEL015418	gene	GPRNPY4	GPCR Neuropeptide Y Family
+AAEL800704	AAEL012190	gene	GPRNPY5	GPCR Neuropeptide Y Family
+AAEL800706	AAEL017005	gene	GPRNPY6	GPCR Neuropeptide Y Family
+AAEL800708	AAEL013505	gene	GPRNPY7	GPCR Neuropeptide Y Family
+AAEL800709	AAEL012601	gene	GPRNPY8	GPCR Neuropeptide Y Family
+AAEL800711	AAEL009698	gene	GPRSIF1	GPCR SIFamide Family
+AAEL800713	AAEL006283	gene	GPRDMS	GPCR Myosuppressin Family
+AAEL800714	AAEL012356	gene	GPRSMS	GPCR Somatostatin Family
+AAEL800715	AAEL008652	gene	GPRVPR1	GPCR vasopressin family receptor 1
+AAEL800716	AAEL008655	gene	GPRVPR2	GPCR Vasopressin Family
+AAEL800717	AAEL002894	gene	GPRADS1_1	GPCR purine/adenosine family
+AAEL800718	AAEL011970	gene	GPRADS1_2	GPCR Purine/Adenosine Family
+AAEL800719	AAEL006498	gene	GPROP1	long wavelength sensitive opsin
+AAEL800720	AAEL006259	gene	GPROP2	long wavelength sensitive opsin
+AAEL800721	AAEL006484	gene	GPROP3	long wavelength sensitive opsin
+AAEL800722	AAEL005621	gene	GPROP4	long wavelength sensitive opsin
+AAEL800723	AAEL005625	gene	GPROP5	long wavelength sensitive opsin
+AAEL800724	AAEL007389	gene	GPROP7	long wavelength sensitive opsin
+AAEL800725	AAEL009615	gene	GPROP8	ultraviolet wavelength sensitive opsin
+AAEL800726	AAEL003035	gene	GPROP9	short wavelength sensitive opsin
+AAEL800729	AAEL005373	gene	GPROP12	pteropsin
+AAEL800730	AAEL003378	gene	GPRNNA1	GPCR Orphan/Putative Class A Family
+AAEL800731	AAEL015604	gene	GPRNNA2	GPCR Orphan/Putative Class A Family
+AAEL800734	AAEL007644	gene	GPRNNA6	GPCR Orphan/Putative Class A Family
+AAEL800735	AAEL009698	gene	GPRNNA7	GPCR Orphan/Putative Class A Family
+AAEL800736	AAEL011680	gene	GPRNNA9	GPCR Orphan/Putative Class A Family
+AAEL800739	AAEL008566	gene	GPRNNA11_1	GPCR Orphan/Putative Class A Family
+AAEL800740	AAEL017313	gene	GPRNNA11_2	GPCR Orphan/Putative Class A Family
+AAEL800741	AAEL003448	gene	GPRNNA13	GPCR Orphan/Putative Class A Family
+AAEL800742	AAEL017549	gene	GPRNNA14	GPCR Orphan/Putative Class A Family
+AAEL800745	AAEL004245	gene	GPRNNA19_1	GPCR Orphan/Putative Class A Family
+AAEL800746	AAEL017428	gene	GPRNNA19_2	GPCR Orphan/Putative Class A Family
+AAEL800747	AAEL000266	gene	GPRNNA21	GPCR Orphan/Putative Class A Family
+AAEL800748	AAEL000528	gene	GPRNNA22	GPCR Orphan/Putative Class A Family
+AAEL800750	AAEL010043	gene	GPRCAL1	GPCR Calcitonin/Diuretic Hormone Family
+AAEL800751	AAEL006490	gene	GPRCAL2	GPCR Calcitonin/Diuretic Hormone Family
+AAEL800752	AAEL009024	gene	GPRCAL3	GPCR Calcitonin/Diuretic Hormone Family
+AAEL800753	AAEL008292	gene	GPRDIH1	GPCR Diuretic Insect Hormone/Kinin/CRF Family
+AAEL800754	AAEL008287	gene	GPRDIH2	GPCR Diuretic Insect Hormone/Kinin/CRF Family
+AAEL800756	AAEL003747	gene	GPRGHP1	GPCR Growth Hormone Releasing Hormone Family
+AAEL800757	AAEL017335	gene	GPRGHP2	GPCR Growth Hormone Releasing Hormone Family
+AAEL800758	AAEL012796	gene	GPRGHP3	GPCR Growth Hormone Releasing Hormone Family
+AAEL800759	AAEL017048	gene	GPRGHP4	GPCR Growth Hormone Releasing Hormone Family
+AAEL800760	AAEL017167	gene	GPRHE6	GPCR HE6-like Family
+AAEL800761	AAEL008126	gene	GPRCIR	GPCR Latrophilin Family
+AAEL800762	AAEL010982	gene	GPRMTH1_1	GPCR Methuselah Family
+AAEL800763	AAEL017259	gene	GPRMTH1_2	GPCR Methuselah Family
+AAEL800764	AAEL010980	gene	GPRMTH2	GPCR Methuselah Family
+AAEL800765	AAEL017374	gene	GPRMTH3	GPCR Methuselah Family
+AAEL800767	AAEL011526	gene	GPRMTH5	GPCR Methuselah Family
+AAEL800768	AAEL011521	gene	GPRMTH6	GPCR Methuselah Family
+AAEL800769	AAEL000811	gene	GPRMTH7	GPCR Methuselah Family
+AAEL800771	AAEL017160	gene	GPRMTH9	GPCR Methuselah Family
+AAEL800772	AAEL001240	gene	GPRNNB1	GPCR Orphan/Putative Class B Family
+AAEL800773	AAEL000602	gene	GPRNNB2	GPCR Orphan/Putative Class B Family
+AAEL800774	AAEL001724	gene	GPRNNB3	GPCR Orphan/Putative Class B Family
+AAEL800775	AAEL006957	gene	GPRNNB4	GPCR Orphan/Putative Class B Family
+AAEL800776	AAEL017479	gene	GPRMGL1	GPCR Metabotropic glutamate Family
+AAEL800777	AAEL004533	gene	GPRMGL2	GPCR Metabotropic glutamate Family
+AAEL800778	AAEL009139	gene	GPRMGL3_1	GPCR Metabotropic glutamate Family
+AAEL800779	AAEL015394	gene	GPRMGL3_2	GPCR Metabotropic glutamate Family
+AAEL800780	AAEL009822	gene	GPRMGL5	GPCR Metabotropic glutamate Family
+AAEL800781	AAEL017068	gene	GPRMGL6	GPCR Metabotropic glutamate Family
+AAEL800782	AAEL007372	gene	GPRGBB1	GPCR GABA B Family
+AAEL800783	AAEL010408	gene	GPRGBB2	GPCR GABA B Family
+AAEL800784	AAEL007709	gene	GPRGBB3	GPCR GABA B Family
+AAEL800785	AAEL013160	gene	GPRFZ1	GPCR Frizzled/Smoothened Family
+AAEL800786	AAEL006778	gene	GPRFZ2	GPCR Frizzled/Smoothened Family
+AAEL800787	AAEL006832	gene	GPRFZ3	GPCR Frizzled/Smoothened Family
+AAEL800788	AAEL008322	gene	GPRFZ4	GPCR Frizzled/Smoothened Family
+AAEL800789	AAEL009986	gene	GPRFZ5	GPCR Frizzled/Smoothened Family
+AAEL800790	AAEL015190	gene	GPRFZ6	GPCR Frizzled/Smoothened Family
+AAEL800791	AAEL009983	gene	GPRFZ7	GPCR Frizzled/Smoothened Family
+AAEL800792	AAEL017448	gene	GPRFZ8	GPCR Frizzled/Smoothened Family
+AAEL800793	AAEL013886	gene	GPRFZ9	GPCR Frizzled/Smoothened Family
+AAEL800794	AAEL006669	gene	GPRSMO	GPCR Frizzled/Smoothened Family
+AAEL800795	AAEL000246	gene	GPRSTN	GPCR Frizzled/Smoothened Family
+AAEL800796	AAEL007004	gene	GPRBOS1	GPCR Bride of Sevenless Family
+AAEL800798	AAEL001782	gene	GPRNND2	GPCR Orphan/Putative Class D Family
+AAEL800799	AAEL006232	gene	GPRNND3	GPCR Orphan/Putative Class D Family
+AAEL800800	AAEL002601	gene	CLIPA1	Clip-Domain Serine Protease  family A. Protease homologue.
+AAEL800801	AAEL005718	gene	CLIPA3	Clip-Domain Serine Protease  family A. Protease homologue
+AAEL800802	AAEL001675	gene	CLIPA10	Clip-Domain Serine Protease  family A. Protease homologue.
+AAEL800803	AAEL002126	gene	CLIPA15	Clip-Domain Serine Protease  family A. Protease homologue.
+AAEL800804	AAEL008404	gene	CLIPA16	Clip-Domain Serine Protease  family A.
+AAEL800805	AAEL007006	gene	CLIPA17	Clip-Domain Serine Protease  family A.
+AAEL800806	AAEL000074	gene	CLIPB1	Clip-Domain Serine Protease  family B.
+AAEL800807	AAEL005064	gene	CLIPB5	Clip-Domain Serine Protease  family B.
+AAEL800808	AAEL000038	gene	CLIPB6	Clip-Domain Serine Protease  family B.
+AAEL800809	AAEL003625	gene	CLIPB8	Clip-Domain Serine Protease  family B.
+AAEL800810	AAEL003610	gene	CLIPB9	Clip-Domain Serine Protease  family B.
+AAEL800811	AAEL003243	gene	CLIPB13A	Clip-Domain Serine Protease  family B.
+AAEL800812	AAEL003253	gene	CLIPB13B	Clip-Domain Serine Protease  family B.
+AAEL800813	AAEL014349	gene	CLIPB15	Clip-Domain Serine Protease  family B.
+AAEL800814	AAEL005648	gene	CLIPB16	Clip-Domain Serine Protease  family B. Protease homologue.
+AAEL800815	AAEL000059	gene	CLIPB19	Clip-Domain Serine Protease  family B. Protease homologue.
+AAEL800816	AAEL001084	gene	CLIPB21	Clip-Domain Serine Protease  family B. Protease homologue.
+AAEL800817	AAEL008668	gene	CLIPB22	Clip-Domain Serine Protease  family B.
+AAEL800818	AAEL012785	gene	CLIPB23	Clip-Domain Serine Protease  family B. Protease homologue.
+AAEL800819	AAEL014140	gene	CLIPB24	Clip-Domain Serine Protease  family B.
+AAEL800820	AAEL014137	gene	CLIPB25	Clip-Domain Serine Protease  family B.
+AAEL800821	AAEL017555	gene	CLIPB26	Clip-Domain Serine Protease  family B.
+AAEL800822	AAEL007993	gene	CLIPB27	Clip-Domain Serine Protease  family B.
+AAEL800823	AAEL013245	gene	CLIPB28	Clip-Domain Serine Protease  family B.
+AAEL800824	AAEL006674	gene	CLIPB29	Clip-Domain Serine Protease  family B.
+AAEL800825	AAEL000760	gene	CLIPB30	Clip-Domain Serine Protease  family B.
+AAEL800826	AAEL006161	gene	CLIPB31	Clip-Domain Serine Protease  family B.
+AAEL800827	AAEL000086	gene	CLIPB32	Clip-Domain Serine Protease  family B.
+AAEL800828	AAEL000099	gene	CLIPB33	Clip-Domain Serine Protease  family B.
+AAEL800829	AAEL000028	gene	CLIPB34	Clip-Domain Serine Protease  family B.
+AAEL800830	AAEL000037	gene	CLIPB35	Clip-Domain Serine Protease  family B.
+AAEL800831	AAEL017325	gene	CLIPB36	Clip-Domain Serine Protease  family B. (Truncated Protease).
+AAEL800832	AAEL005431	gene	CLIPB37	Clip-Domain Serine Protease  family B.
+AAEL800833	AAEL003628	gene	CLIPB38	Clip-Domain Serine Protease  family B.
+AAEL800834	AAEL003632	gene	CLIPB39	Clip-Domain Serine Protease  family B.
+AAEL800835	AAEL003614	gene	CLIPB40	Clip-Domain Serine Protease  family B.
+AAEL800836	AAEL003631	gene	CLIPB41	Clip-Domain Serine Protease  family B.
+AAEL800837	AAEL006168	gene	CLIPB42	Clip-Domain Serine Protease  family B.
+AAEL800838	AAEL014354	gene	CLIPB43	Clip-Domain Serine Protease family B.
+AAEL800839	AAEL005060	gene	CLIPB44	Clip-Domain Serine Protease family B.
+AAEL800840	AAEL001077	gene	CLIPB45	Clip-Domain Serine Protease family B. Protease homologue.
+AAEL800841	AAEL005093	gene	CLIPB46	Clip-Domain Serine Protease family B.
+AAEL800842	AAEL011991	gene	CLIPC1	Clip-Domain Serine Protease family C.
+AAEL800843	AAEL007593	gene	CLIPC2	Clip-Domain Serine Protease family C.
+AAEL800844	AAEL007597	gene	CLIPC3	Clip-Domain Serine Protease family C
+AAEL800845	AAEL004518	gene	CLIPC5A	Clip-Domain Serine Protease family C
+AAEL800846	AAEL004524	gene	CLIPC5B	Clip-Domain Serine Protease family C.
+AAEL800847	AAEL004540	gene	CLIPC6	Clip-Domain Serine Protease family C.
+AAEL800848	AAEL011593	gene	CLIPC11	Clip-Domain Serine Protease family C.
+AAEL800849	AAEL012711	gene	CLIPC12	Clip-Domain Serine Protease family C.
+AAEL800850	AAEL012712	gene	CLIPC13	Clip-Domain Serine Protease family C.
+AAEL800851	AAEL012713	gene	CLIPC16	Clip-Domain Serine Protease family C.
+AAEL800855	AAEL002380	gene	Gr1	gustatory receptor Gr1
+AAEL800856	AAEL002167	gene	Gr2	gustatory receptor Gr2
+AAEL800857	AAEL010058	gene	Gr3	gustatory receptor Gr3
+AAEL800858	AAEL000048	gene	Gr4	gustatory receptor Gr4
+AAEL800860	AAEL000012	gene	Gr6	gustatory receptor Gr6
+AAEL800861	AAEL000060	gene	Gr7	gustatory receptor Gr7
+AAEL800862	AAEL000075	gene	Gr9	gustatory receptor Gr9
+AAEL800863	AAEL000082	gene	Gr10	gustatory receptor Gr10
+AAEL800864	AAEL011174	gene	Gr11	gustatory receptor Gr11
+AAEL800865	AAEL011571	gene	Gr14	gustatory receptor Gr14
+AAEL800866	AAEL017304	gene	Gr15	gustatory receptor Gr15
+AAEL800867	AAEL017230	gene	Gr16	gustatory receptor Gr16
+AAEL800868	AAEL017097	gene	Gr17	gustatory receptor Gr17
+AAEL800869	AAEL017327	gene	GPr1	gustatory receptor Gr18
+AAEL800870	AAEL011073	gene	Gr19	gustatory receptor Gr19
+AAEL800873	AAEL007935	gene	Gr20	gustatory receptor Gr20
+AAEL800882	AAEL013192	gene	Gr21	gustatory receptor Gr21
+AAEL800883	AAEL013190	gene	Gr22	gustatory receptor Gr22
+AAEL800884	AAEL013196	gene	Gr23	gustatory receptor Gr23
+AAEL800885	AAEL013193	gene	Gr25	gustatory receptor Gr25
+AAEL800886	AAEL013195	gene	Gr26	gustatory receptor Gr26
+AAEL800887	AAEL015556	gene	Gr27	gustatory receptor Gr27
+AAEL800888	AAEL010277	gene	Gr28	gustatory receptor Gr28
+AAEL800889	AAEL010275	gene	Gr29	gustatory receptor Gr29
+AAEL800890	AAEL007933	gene	Gr31	gustatory receptor Gr31
+AAEL800891	AAEL017063	gene	Gr32	gustatory receptor Gr32
+AAEL800892	AAEL017446	gene	Gr33	gustatory receptor Gr33a
+AAEL800894	AAEL000162	gene	Gr34	gustatory receptor Gr34
+AAEL800895	AAEL017415	gene	Gr35	gustatory receptor Gr35
+AAEL800896	AAEL017169	gene	Gr36	gustatory receptor Gr36
+AAEL800897	AAEL017235	gene	Gr37	gustatory receptor Gr37
+AAEL800898	AAEL017206	gene	Gr39	gustatory receptor Gr39a
+AAEL800900	AAEL006500	gene	Gr41	gustatory receptor Gr41
+AAEL800901	AAEL017449	gene	Gr42	gustatory receptor Gr42
+AAEL800902	AAEL017182	gene	Gr43	gustatory receptor Gr43
+AAEL800903	AAEL017569	gene	Gr44	gustatory receptor Gr44
+AAEL800904	AAEL006494	gene	Gr45	gustatory receptor Gr45
+AAEL800905	AAEL017092	gene	Gr46	gustatory receptor Gr46
+AAEL800906	AAEL017408	gene	Gr47	gustatory receptor Gr47
+AAEL800907	AAEL017488	gene	Gr49	gustatory receptor Gr49
+AAEL800908	AAEL017304	gene	Gr51	gustatory receptor Gr51
+AAEL800909	AAEL010279	gene	Gr53	gustatory receptor Gr53
+AAEL800910	AAEL017364	gene	Gr54	gustatory receptor Gr54
+AAEL800911	AAEL010274	gene	Gr55	gustatory receptor Gr55
+AAEL800912	AAEL010278	gene	Gr56	gustatory receptor Gr56
+AAEL800913	AAEL010272	gene	Gr57	gustatory receptor Gr57
+AAEL800914	AAEL017324	gene	Gr58	gustatory receptor Gr58
+AAEL800915	AAEL013200	gene	Gr59	gustatory receptor Gr59
+AAEL800916	AAEL017450	gene	Gr60	gustatory receptor Gr60
+AAEL800917	AAEL017202	gene	Gr61	gustatory receptor Gr61
+AAEL800918	AAEL017040	gene	Gr62	gustatory receptor Gr62
+AAEL800919	AAEL017565	gene	Gr63	gustatory receptor Gr63
+AAEL800920	AAEL007142	gene	Gr64	gustatory receptor Gr64
+AAEL800921	AAEL017295	gene	Gr65	gustatory receptor Gr65
+AAEL800922	AAEL017394	gene	Gr66	gustatory receptor Gr66
+AAEL800923	AAEL017158	gene	Gr67	gustatory receptor Gr67
+AAEL800928	AAEL017527	gene	Gr68	gustatory receptor Gr68
+AAEL800930	AAEL017441	gene	Gr69	gustatory receptor Gr69
+AAEL800931	AAEL017432	gene	Gr70	gustatory receptor Gr70
+AAEL800932	AAEL017307	gene	Gr71	gustatory receptor Gr71
+AAEL800933	AAEL017216	gene	Gr72	gustatory receptor Gr72
+AAEL800934	AAEL010962	gene	Gr73	gustatory receptor Gr73
+AAEL800935	AAEL017476	gene	Gr74	gustatory receptor Gr74
+AAEL800938	AAEL009545	gene	Gr76	gustatory receptor Gr76
+AAEL800939	AAEL007940	gene	Gr77	gustatory receptor Gr77
+AAEL800940	AAEL017312	gene	Gr78	gustatory receptor Gr78
+AAEL800941	AAEL017486	gene	Gr79	gustatory receptor Gr79
+AAEL800943	AAEL017403	gene	TMOF	Trypsin Modulating Oostatic Factor
+AAEL800944	AAEL008076	gene	PIWI1	PIWI
+AAEL800945	AAEL008098	gene	PIWI2	PIWI
+AAEL800946	AAEL013692	gene	PIWI3	PIWI
+AAEL800947	AAEL007698	gene	PIWI4	PIWI
+AAEL800948	AAEL013233	gene	PIWI5	PIWI
+AAEL800949	AAEL013227	gene	PIWI6	PIWI
+AAEL800950	AAEL006287	gene	PIWI7	PIWI
+AAEL800951	AAEL015246	gene	AGO1a	eukaryotic translation initiation factor 2C
+AAEL800952	AAEL012410	gene	AGO1b	eukaryotic translation initiation factor 2C
+AAEL801312	AAEL016987	gene	APG1	autophagy related gene
+AAEL801313	AAEL003799	gene	APG2	autophagy related gene
+AAEL801314	AAEL000955	gene	APG3	autophagy related gene
+AAEL801315	AAEL010516	gene	APG4A	autophagy related gene
+AAEL801316	AAEL007228	gene	APG4B	autophagy related gene
+AAEL801317	AAEL002286	gene	APG5	autophagy related gene
+AAEL801318	AAEL010427	gene	APG6	autophagy related gene
+AAEL801319	AAEL010641	gene	APG7A	autophagy related gene
+AAEL801320	AAEL012306	gene	APG7B	autophagy related gene
+AAEL801321	AAEL007162	gene	APG8	autophagy related gene
+AAEL801322	AAEL009105	gene	APG9	autophagy related gene
+AAEL801323	AAEL013815	gene	APG10	autophagy related gene
+AAEL801324	AAEL009089	gene	APG12	autophagy related gene
+AAEL801325	AAEL007574	gene	APG16L	autophagy related gene
+AAEL801326	AAEL013063	gene	APG18A	autophagy related gene
+AAEL801327	AAEL013995	gene	APG18B	autophagy related gene
+AAEL801328	AAEL001521	gene	BUFFY	autophagy related gene BUFFY
+AAEL801329	AAEL001515	gene	DEBCL	autophagy related gene DEBCL
+AAEL801330	AAEL000693	gene	TOR	autophagy related gene TOR
+AAEL801288	AAEL012538	gene	LRIM6	leucine-rich immune protein (Short)
+AAEL801290	AAEL001420	gene	LRIM8	leucine-rich immune protein (Short)
+AAEL801296	AAEL012255	gene	LRIM13	leucine-rich immune protein (Short)
+AAEL801301	AAEL000762	gene	LRIM19	leucine-rich immune protein (Coil-less)
+AAEL801308	AAEL007231	gene	LRIM28	leucine-rich immune protein (Coil-less)
+AAEL801281	AAEL017981	gene	HSP70Ca'	heat shock protein HSP70
+AAEL801287	AAEL012767	gene	LRIM5	leucine-rich immune protein (Short)
+AAEL801289	AAEL001417	gene	LRIM7	leucine-rich immune protein (Short)
+AAEL801295	AAEL010656	gene	LRIM12	leucine-rich immune protein (Short)
+AAEL801304	AAEL007224	gene	LRIM22	leucine-rich immune protein (Coil-less)
+AAEL801311	AAEL006377	gene	LRIM31	leucine-rich immune protein (Coil-less)
+AAEL801276	AAEL017978	gene	HSP70Cb	heat shock protein HSP70
+AAEL801283	AAEL012086	gene	LRIM1	leucine-rich immune protein (Long)
+AAEL801291	AAEL001414	gene	LRIM9	leucine-rich immune protein (Short)
+AAEL801297	AAEL007103	gene	LRIM15	leucine-rich immune protein (TM)
+AAEL801305	AAEL004466	gene	LRIM23	leucine-rich immune protein (Coil-less)
+AAEL801278	AAEL017980	gene	HSP70Ab'	heat shock protein HSP70
+AAEL801284	AAEL009520	gene	LRIM2	leucine-rich immune protein (Long)
+AAEL801292	AAEL001401	gene	LRIM10A	leucine-rich immune protein (Short)
+AAEL801298	AAEL008658	gene	LRIM16	leucine-rich immune protein (TM)
+AAEL801302	AAEL006920	gene	LRIM20	leucine-rich immune protein (Coil-less)
+AAEL801309	AAEL015627	gene	LRIM29	leucine-rich immune protein (Coil-less)
+AAEL801271	AAEL017973	gene	HSP70Aa	heat shock protein HSP70
+AAEL801277	AAEL017979	gene	HSP70Aa'	heat shock protein HSP70
+AAEL801285	AAEL010132	gene	LRIM3	leucine-rich immune protein (Long)
+AAEL801293	AAEL001402	gene	LRIM10B	leucine-rich immune protein (Short)
+AAEL801299	AAEL010125	gene	LRIM17	leucine-rich immune protein (Coil-less)
+AAEL801306	AAEL012763	gene	LRIM24	leucine-rich immune protein (Coil-less)
+AAEL801275	AAEL017977	gene	HSP70Ca	heat shock protein HSP70
+AAEL801282	AAEL017982	gene	HSP70Cb'	heat shock protein HSP70
+AAEL801286	AAEL010128	gene	LRIM4	leucine-rich immune protein (Long)
+AAEL801294	AAEL010129	gene	LRIM11	leucine-rich immune protein (Short)
+AAEL801300	AAEL012911	gene	LRIM18	leucine-rich immune protein (Coil-less)
+AAEL801307	AAEL009792	gene	LRIM25	leucine-rich immune protein (Coil-less)
+AAEL801274	AAEL017976	gene	HSP70Bb	heat shock protein HSP70
+AAEL801303	AAEL009894	gene	LRIM21	leucine-rich immune protein (Coil-less)
+AAEL801310	AAEL012771	gene	LRIM30	leucine-rich immune protein (Coil-less)
+AAEL801272	AAEL017974	gene	HSP70Ab	heat shock protein HSP70
+AAEL801273	AAEL017975	gene	HSP70Ba	heat shock protein HSP70
+AAEL801331	AAEL008932	gene	Kir1	inward-rectifying potassium channel
+AAEL801333	AAEL008931	gene	Kir2B	inward-rectifying potassium channel
+AAEL801332	AAEL008928	gene	Kir2A	inward-rectifying potassium channel
+AAEL801334	AAEL013373	gene	Kir2B'	inward-rectifying potassium channel
+AAEL801335	AAEL001646	gene	Kir3	inward-rectifying potassium channel
+AAEL801336	AAEL005322	gene	GPROP10	unknown wavelength sensitive opsin
+AAEL801337	AAEL006454	gene	OBP1	odorant binding protein OBP1
+AAEL801338	AAEL000071	gene	OBP2	odorant binding protein OBP2
+AAEL801339	AAEL000051	gene	OBP3	odorant binding protein OBP3
+AAEL801340	AAEL000073	gene	OBP4	odorant binding protein OBP4
+AAEL801341	AAEL000139	gene	OBP5	odorant binding protein OBP5
+AAEL801342	AAEL000821	gene	OBP6	odorant binding protein OBP6
+AAEL801343	AAEL000833	gene	OBP7	odorant binding protein OBP7
+AAEL801344	AAEL001826	gene	OBP8	odorant binding protein OBP8
+AAEL801345	AAEL002596	gene	OBP9	odorant binding protein OBP9
+AAEL801346	AAEL007603	gene	OBP10	odorant binding protein OBP10
+AAEL801347	AAEL002587	gene	OBP11	odorant binding protein OBP11
+AAEL801348	AAEL002617	gene	OBP12	odorant binding protein OBP12
+AAEL801349	AAEL002591	gene	OBP13	odorant binding protein OBP13
+AAEL801350	AAEL002605	gene	OBP14	odorant binding protein OBP14
+AAEL801351	AAEL002598	gene	OBP15	odorant binding protein OBP15
+AAEL801352	AAEL003315	gene	OBP16	odorant binding protein OBP16
+AAEL801353	AAEL004339	gene	OBP17	odorant binding protein OBP17
+AAEL801354	AAEL004342	gene	OBP18	odorant binding protein OBP18
+AAEL801355	AAEL004343	gene	OBP19	odorant binding protein OBP19
+AAEL801356	AAEL005778	gene	OBP20	odorant binding protein OBP20
+AAEL801357	AAEL005770	gene	OBP21	odorant binding protein OBP21
+AAEL801358	AAEL005772	gene	OBP22	odorant binding protein OBP22
+AAEL801359	AAEL006109	gene	OBP23	odorant binding protein OBP23
+AAEL801360	AAEL006108	gene	OBP24	odorant binding protein OBP24
+AAEL801361	AAEL006103	gene	OBP25	odorant binding protein OBP25
+AAEL801362	AAEL006106	gene	OBP26	odorant binding protein OBP26
+AAEL801363	AAEL006176	gene	OBP27	odorant binding protein OBP27
+AAEL801364	AAEL006393	gene	OBP28	odorant binding protein OBP28
+AAEL801365	AAEL006387	gene	OBP29	odorant binding protein OBP29
+AAEL801367	AAEL006396	gene	OBP31	odorant binding protein OBP31
+AAEL801368	AAEL006398	gene	OBP32	odorant binding protein OBP32
+AAEL801369	AAEL006385	gene	OBP33	odorant binding protein OBP33
+AAEL801370	AAEL014082	gene	OBP34	odorant binding protein OBP34
+AAEL801371	AAEL002606	gene	OBP35	odorant binding protein OBP35
+AAEL801372	AAEL008011	gene	OBP36	odorant binding protein OBP36
+AAEL801373	AAEL008009	gene	OBP37	odorant binding protein OBP37
+AAEL801374	AAEL008013	gene	OBP38	odorant binding protein OBP38
+AAEL801375	AAEL009449	gene	OBP39	odorant binding protein OBP39
+AAEL801376	AAEL009597	gene	OBP40	odorant binding protein OBP40
+AAEL801377	AAEL009599	gene	OBP41	odorant binding protein OBP41
+AAEL801378	AAEL010666	gene	OBP42	odorant binding protein OBP42
+AAEL801379	AAEL010662	gene	OBP43	odorant binding protein OBP43
+AAEL801380	AAEL010718	gene	OBP44	odorant binding protein OBP44
+AAEL801381	AAEL010714	gene	OBP45	odorant binding protein OBP45
+AAEL801382	AAEL010872	gene	OBP46	odorant binding protein OBP46
+AAEL801383	AAEL011499	gene	OBP47	odorant binding protein OBP47
+AAEL801384	AAEL011494	gene	OBP48	odorant binding protein OBP48
+AAEL801385	AAEL011484	gene	OBP49	odorant binding protein OBP49
+AAEL801386	AAEL011490	gene	OBP50	odorant binding protein OBP50
+AAEL801387	AAEL011487	gene	OBP51	odorant binding protein OBP51
+AAEL801388	AAEL011491	gene	OBP52	odorant binding protein OBP52
+AAEL801389	AAEL011482	gene	OBP53	odorant binding protein OBP53
+AAEL801390	AAEL011481	gene	OBP54	odorant binding protein OBP43
+AAEL801391	AAEL012377	gene	OBP55	odorant binding protein OBP55
+AAEL801392	AAEL013018	gene	OBP56	odorant binding protein OBP56
+AAEL801393	AAEL000035	gene	OBP57	odorant binding protein OBP57
+AAEL801394	AAEL014430	gene	OBP58	odorant binding protein OBP58
+AAEL801395	AAEL015313	gene	OBP59	odorant binding protein OBP59
+AAEL801396	AAEL015499	gene	OBP60	odorant binding protein OBP60
+AAEL801397	AAEL015554	gene	OBP61	odorant binding protein OBP61
+AAEL801398	AAEL015566	gene	OBP62	odorant binding protein OBP62
+AAEL801399	AAEL015567	gene	OBP63	odorant binding protein OBP63
+AAEL801401	AAEL002618	gene	OBP65	odorant binding protein OBP65
+AAEL801402	AAEL002606	gene	OBP66	odorant binding protein OBP66
+AAEL801403	AAEL016999	gene	white	white protein; eye pigment transporter
+AAEL801408	AAEL012107	gene	NOS	nanos
+AAEL801409	AAEL012316	gene	ASNA1-2	arsenical pump-driving ATPase
+AAEL801404	AAEL006411	gene	TIM	timeless circadian protein
+AAEL801405	AAEL008141	gene	PER	period circadian protein
+AAEL801406	AAEL004146	gene	CRY1	cryptochrome 1
+AAEL801407	AAEL005255	gene	PDP1	PAR-domain protein 1
+AAEL801410	AAEL011136	gene	ASNA1-1	arsenical pump-driving ATPase
+AAEL801411	AAEL005252	gene	CRZ	corazonin
+AAEL801412	AAEL005241	gene	LST2	lateral signalling target protein 2
+AAEL801413	AAEL010450	gene	TIM10	mitochondrial import inner membrane translocase subunit  TIM10

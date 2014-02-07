@@ -1,0 +1,379 @@
+# PubMed literature citations
+# Acronym: PubMed
+# URL: http://www.ncbi.nlm.nih.gov/pubmed
+# Description: PubMed comprises more than 20 million citations for biomedical literature from MEDLINE, life science journals, and online books. 
+# Species: Aedes aegypti Liverpool
+# Genebuild: AaegL2.1
+# UniProt release: 2010-11
+# Date: 2013-12-02
+# Author: Dan Lawson lawson@ebi.ac.uk
+#
+# DEFAULTS.ini
+# PUBMED= http://www.ncbi.nlm.nih.gov/pubmed/###ID###
+#
+# 2010-12-02:  41 entries, 29 unique papers
+# 2012-02-07:  46 entries, 32 unique papers 
+# 2012-09-20; 113 entries, 35 unique papers 
+# 2012-11-03; 121 entries, 38 unique papers
+# 2012-12-06; 198 entries, 42 unique papers
+# 2013-04-04; 200 entries, 44 unique papers
+# 2013-07-10; 227 entries, 49 unique papers
+# 2013-10-04; 355 entries, 92 unique papers
+# 2013-11-29; 356 entries, 93 unique papers
+#
+1354853	AAEL009742	gene	AAEL009742	Inferred from UniProt entry ABDA_AEDAE (P29552)
+1961751	AAEL006563	gene	AAEL006563	Inferred from UniProt entry VCP_AEDAE (P42660)
+2052024	AAEL006424	gene	AAEL006424	Inferred from UniProt entry ALL2_AEDAE (P18153)
+2470653	AAEL000392	gene	AAEL000392	Inferred from UniProt entry MALT_AEDAE (P13080)
+7498420	AAEL006347	gene	AAEL006347	Inferred from UniProt entry APY_AEDAE (P50635)
+7550249	AAEL010434	gene	AAEL010434	Inferred from UniProt entry VIT1_AEDAE (Q16927)
+7633471	AAEL003832	gene	AAEL003832	Inferred from UniProt entry DEFC_AEDAE (P81603)
+7633471	AAEL003857	gene	AAEL003857	Inferred from UniProt entry DEFA_AEDAE (P91793) and DEFB_AEDAE (P81602)
+7635199	AAEL012141	gene	AAEL012141	Inferred from UniProt entry Q9TX11_AEDAE (Q9TX11)
+7655055	AAEL007385	gene	AAEL007385	Inferred from UniProt entry FRI_AEDAE (P41822)
+7711747	AAEL009600	gene	AAEL009600	Inferred from UniProt entry ECR_AEDAE (P49880)
+7846038	AAEL006347	gene	AAEL006347	Inferred from UniProt entry APY_AEDAE (P50635)
+8048942	AAEL010172	gene	AAEL010172	Inferred from UniProt entry LCK_AEDAE (O02036)
+8158643	AAEL010434	gene	AAEL010434	Inferred from UniProt entry VIT1_AEDAE (Q16927)
+8278354	AAEL000229	gene	AAEL000229	Inferred from UniProt entry TKSIA_AEDAE (P42634)
+8432405	AAEL013027	gene	AAEL013027	Inferred from UniProt entry V15A1_AEDAE (Q16KE2)
+8814787	AAEL003857	gene	AAEL003857	Inferred from UniProt entry DEFA_AEDAE (P91793)
+8900599	AAEL004386	gene	AAEL004386	Inferred from UniProt entry PERC_AEDAE (P82600)
+9099680	AAEL010172	gene	AAEL010172	Inferred from UniProt entry LCK_AEDAE (O02036)
+9134710	AAEL003060	gene	AAEL003060	Inferred from UniProt entry Q16900_AEDAE (Q16900)
+9443377	AAEL006719	gene	AAEL006719	Inferred from UniProt entry AMY1_AEDAE (P53354)
+9887508	AAEL013027	gene	AAEL013027	Inferred from UniProt entry V15A1_AEDAE (Q16KE2)
+9887508	AAEL014561	gene	AAEL014561	Inferred from UniProt entry V15A3_AEDAE (Q16G12)
+10212245	AAEL005798	gene	AAEL005798	Inferred from UniProt entry Q9XYC8_AEDAE (Q9XYC8)
+10400619	AAEL000627	gene	AAEL000627	Inferred from UniProt entry CECA_AEDAE (P82592)
+10436938	AAEL006424	gene	AAEL006424	Inferred from UniProt entry ALL2_AEDAE (P18153)
+10871050	AAEL004386	gene	AAEL004386	Inferred from UniProt entry PERC_AEDAE (P82600)
+12213240	AAEL010644	gene	AAEL010644	Inferred from UniProt entry Q8WRS8_AEDAE (Q8WRS8)
+12213240	AAEL010691	gene	AAEL010691	Inferred from UniProt entry Q95VP8_AEDAE (Q95VP8)
+12213246	AAEL003057	gene	AAEL003057	Inferred from UniProt entry Q8T9U1_AEDAE (Q8T9U1)
+12213246	AAEL005596	gene	AAEL005596	Inferred from UniProt entry Q8T9U6_AEDAE (Q8T9U6)
+12213246	AAEL007064	gene	AAEL007064	Inferred from UniProt entry Q8T9V2_AEDAE (Q8T9V2)
+12213246	AAEL007776	gene	AAEL007776	Inferred from UniProt entry Q8T9T9_AEDAE (Q8T9T9)
+12213246	AAEL007986	gene	AAEL007986	Inferred from UniProt entry Q8T9U2_AEDAE (Q8T9U2)
+12213246	AAEL009081	gene	AAEL009081	Inferred from UniProt entry Q8T9V3_AEDAE (Q8T9V3)
+12213246	AAEL010228	gene	AAEL010228	Inferred from UniProt entry Q8T9T8_AEDAE (Q8T9T8)
+12385823	AAEL009600	gene	AAEL009600	Inferred from UniProt entry ECR_AEDAE (P49880)
+14513362	AAEL001293	gene	AAEL001293	Inferred from UniProt entry Q95P61_AEDAE (Q95P61)
+14513362	AAEL004783	gene	AAEL004783	Inferred from UniProt entry OAZ_AEDAE (Q95P51)
+14513362	AAEL009181	gene	AAEL009181	Inferred from UniProt entry Q967G2_AEDAE (Q967G2)
+19926804	AAEL008141	gene	PER	Supplied by Sam Rund (srund at nd.edu)
+19926804	AAEL006411	gene	TIM	Supplied by Sam Rund (srund at nd.edu)
+19926804	AAEL005255	gene	PDP1	Supplied by Sam Rund (srund at nd.edu)
+19926804	AAEL004146	gene	CRY1	Supplied by Sam Rund (srund at nd.edu)
+17046601	AAEL006411	gene	TIM	Supplied by Sam Rund (srund at nd.edu)
+15894194	AAEL012107	gene	NOS	SUpplied by Osvaldo Marinotti (omarinot at uci.edu)
+19264986	AAEL012538	gene	LRIM6	Supplied by Robert Waterhouse
+20920294	AAEL012538	gene	LRIM6	Supplied by Robert Waterhouse
+19264986	AAEL001420	gene	LRIM8	Supplied by Robert Waterhouse
+20920294	AAEL001420	gene	LRIM8	Supplied by Robert Waterhouse
+19264986	AAEL012255	gene	LRIM13	Supplied by Robert Waterhouse
+20920294	AAEL012255	gene	LRIM13	Supplied by Robert Waterhouse
+19264986	AAEL000762	gene	LRIM19	Supplied by Robert Waterhouse
+20920294	AAEL000762	gene	LRIM19	Supplied by Robert Waterhouse
+19264986	AAEL007231	gene	LRIM28	Supplied by Robert Waterhouse
+20920294	AAEL007231	gene	LRIM28	Supplied by Robert Waterhouse
+19496419	AAEL017585	gene	HSP70Ca'	Supplied by Daniel Lawson
+19264986	AAEL012767	gene	LRIM5	Supplied by Robert Waterhouse
+20920294	AAEL012767	gene	LRIM5	Supplied by Robert Waterhouse
+19264986	AAEL001417	gene	LRIM7	Supplied by Robert Waterhouse
+20920294	AAEL001417	gene	LRIM7	Supplied by Robert Waterhouse
+19264986	AAEL010656	gene	LRIM12	Supplied by Robert Waterhouse
+20920294	AAEL010656	gene	LRIM12	Supplied by Robert Waterhouse
+19264986	AAEL007224	gene	LRIM22	Supplied by Robert Waterhouse
+20920294	AAEL007224	gene	LRIM22	Supplied by Robert Waterhouse
+19264986	AAEL006377	gene	LRIM31	Supplied by Robert Waterhouse
+20920294	AAEL006377	gene	LRIM31	Supplied by Robert Waterhouse
+19496419	AAEL017582	gene	HSP70Cb	Supplied by Daniel Lawson
+19264986	AAEL012086	gene	LRIM1	Supplied by Robert Waterhouse
+20920294	AAEL012086	gene	LRIM1	Supplied by Robert Waterhouse
+19797660	AAEL012086	gene	LRIM1	Supplied by Robert Waterhouse
+19264986	AAEL007103	gene	LRIM15	Supplied by Robert Waterhouse
+20920294	AAEL007103	gene	LRIM15	Supplied by Robert Waterhouse
+19264986	AAEL004466	gene	LRIM23	Supplied by Robert Waterhouse
+20920294	AAEL004466	gene	LRIM23	Supplied by Robert Waterhouse
+19496419	AAEL017584	gene	HSP70Ab'	Supplied by Daniel Lawson
+19264986	AAEL009520	gene	LRIM2	Supplied by Robert Waterhouse
+20920294	AAEL009520	gene	LRIM2	Supplied by Robert Waterhouse
+19264986	AAEL001401	gene	LRIM10A	Supplied by Robert Waterhouse
+20920294	AAEL001401	gene	LRIM10A	Supplied by Robert Waterhouse
+19264986	AAEL008658	gene	LRIM16	Supplied by Robert Waterhouse
+20920294	AAEL008658	gene	LRIM16	Supplied by Robert Waterhouse
+19264986	AAEL006920	gene	LRIM20	Supplied by Robert Waterhouse
+20920294	AAEL006920	gene	LRIM20	Supplied by Robert Waterhouse
+19264986	AAEL015627	gene	LRIM29	Supplied by Robert Waterhouse
+20920294	AAEL015627	gene	LRIM29	Supplied by Robert Waterhouse
+19496419	AAEL017577	gene	HSP70Aa	Supplied by Daniel Lawson
+19496419	AAEL017583	gene	HSP70Aa'	Supplied by Daniel Lawson
+19264986	AAEL010132	gene	LRIM3	Supplied by Robert Waterhouse
+20920294	AAEL010132	gene	LRIM3	Supplied by Robert Waterhouse
+19264986	AAEL001402	gene	LRIM10B	Supplied by Robert Waterhouse
+20920294	AAEL001402	gene	LRIM10B	Supplied by Robert Waterhouse
+19264986	AAEL010125	gene	LRIM17	Supplied by Robert Waterhouse
+20920294	AAEL010125	gene	LRIM17	Supplied by Robert Waterhouse
+19264986	AAEL012763	gene	LRIM24	Supplied by Robert Waterhouse
+20920294	AAEL012763	gene	LRIM24	Supplied by Robert Waterhouse
+19496419	AAEL017581	gene	HSP70Ca	Supplied by Daniel Lawson
+19496419	AAEL017586	gene	HSP70Cb'	Supplied by Daniel Lawson
+19264986	AAEL010128	gene	LRIM4	Supplied by Robert Waterhouse
+20920294	AAEL010128	gene	LRIM4	Supplied by Robert Waterhouse
+19264986	AAEL010129	gene	LRIM11	Supplied by Robert Waterhouse
+20920294	AAEL010129	gene	LRIM11	Supplied by Robert Waterhouse
+19264986	AAEL012911	gene	LRIM18	Supplied by Robert Waterhouse
+20920294	AAEL012911	gene	LRIM18	Supplied by Robert Waterhouse
+19264986	AAEL009792	gene	LRIM25	Supplied by Robert Waterhouse
+20920294	AAEL009792	gene	LRIM25	Supplied by Robert Waterhouse
+19496419	AAEL017580	gene	HSP70Bb	Supplied by Daniel Lawson
+19264986	AAEL009894	gene	LRIM21	Supplied by Robert Waterhouse
+20920294	AAEL009894	gene	LRIM21	Supplied by Robert Waterhouse
+19264986	AAEL012771	gene	LRIM30	Supplied by Robert Waterhouse
+20920294	AAEL012771	gene	LRIM30	Supplied by Robert Waterhouse
+19496419	AAEL017578	gene	HSP70Ab	Supplied by Daniel Lawson
+19496419	AAEL017579	gene	HSP70Ba	Supplied by Daniel Lawson
+22292096	AAEL005834	gene	GPRDOP2	Supplied by Gloria Giraldo-Calderon
+22292096	AAEL003920	gene	GPRDOP1	Supplied by Gloria Giraldo-Calderon
+23085358	AAEL008932	gene	Kir1	Supplied by Daniel Lawson
+23085358	AAEL008928	gene	Kir2A	Supplied by Daniel Lawson
+23085358	AAEL008931	gene	Kir2B	Supplied by Daniel Lawson
+23085358	AAEL013373	gene	Kir2B'	Supplied by Daniel Lawson
+23085358	AAEL001646	gene	Kir3	Supplied by Daniel Lawson
+22457801	AAEL008851	gene	AAEL008851	Supplied by Dan Lawson
+22457801	AAEL001543	gene	AAEL001543	Supplied by Dan Lawson
+22457801	AAEL008722	gene	AAEL008722	Supplied by Dan Lawson
+18353104	AAEL000035	gene	AAEL000035	Supplied by Jing-Jiang Zhou
+18353104	AAEL000051	gene	AAEL000051	Supplied by Jing-Jiang Zhou
+18353104	AAEL000071	gene	AAEL000071	Supplied by Jing-Jiang Zhou
+22309624	AAEL000071	gene	AAEL000071	Supplied by Robert Waterhouse
+18353104	AAEL000073	gene	AAEL000073	Supplied by Jing-Jiang Zhou
+18353104	AAEL000139	gene	AAEL000139	Supplied by Jing-Jiang Zhou
+18353104	AAEL000821	gene	AAEL000821	Supplied by Jing-Jiang Zhou
+18353104	AAEL000833	gene	AAEL000833	Supplied by Jing-Jiang Zhou
+18353104	AAEL001826	gene	AAEL001826	Supplied by Jing-Jiang Zhou
+18353104	AAEL002587	gene	AAEL002587	Supplied by Jing-Jiang Zhou
+18353104	AAEL002591	gene	AAEL002591	Supplied by Jing-Jiang Zhou
+18353104	AAEL002596	gene	AAEL002596	Supplied by Jing-Jiang Zhou
+18353104	AAEL002598	gene	AAEL002598	Supplied by Jing-Jiang Zhou
+18353104	AAEL002605	gene	AAEL002605	Supplied by Jing-Jiang Zhou
+18353104	AAEL002606	gene	AAEL002606	Supplied by Jing-Jiang Zhou
+18353104	AAEL002617	gene	AAEL002617	Supplied by Jing-Jiang Zhou
+18353104	AAEL002618	gene	AAEL002618	Supplied by Jing-Jiang Zhou
+18353104	AAEL003315	gene	AAEL003315	Supplied by Jing-Jiang Zhou
+18353104	AAEL004339	gene	AAEL004339	Supplied by Jing-Jiang Zhou
+18353104	AAEL004342	gene	AAEL004342	Supplied by Jing-Jiang Zhou
+18353104	AAEL004343	gene	AAEL004343	Supplied by Jing-Jiang Zhou
+18353104	AAEL005770	gene	AAEL005770	Supplied by Jing-Jiang Zhou
+18353104	AAEL005772	gene	AAEL005772	Supplied by Jing-Jiang Zhou
+18353104	AAEL005778	gene	AAEL005778	Supplied by Jing-Jiang Zhou
+18353104	AAEL006103	gene	AAEL006103	Supplied by Jing-Jiang Zhou
+18353104	AAEL006106	gene	AAEL006106	Supplied by Jing-Jiang Zhou
+18353104	AAEL006108	gene	AAEL006108	Supplied by Jing-Jiang Zhou
+18353104	AAEL006109	gene	AAEL006109	Supplied by Jing-Jiang Zhou
+18353104	AAEL006176	gene	AAEL006176	Supplied by Jing-Jiang Zhou
+18353104	AAEL006385	gene	AAEL006385	Supplied by Jing-Jiang Zhou
+18353104	AAEL006387	gene	AAEL006387	Supplied by Jing-Jiang Zhou
+18353104	AAEL006393	gene	AAEL006393	Supplied by Jing-Jiang Zhou
+18353104	AAEL006396	gene	AAEL006396	Supplied by Jing-Jiang Zhou
+18353104	AAEL006398	gene	AAEL006398	Supplied by Jing-Jiang Zhou
+18353104	AAEL006454	gene	AAEL006454	Supplied by Jing-Jiang Zhou
+18353104	AAEL007603	gene	AAEL007603	Supplied by Jing-Jiang Zhou
+18353104	AAEL008009	gene	AAEL008009	Supplied by Jing-Jiang Zhou
+18353104	AAEL008011	gene	AAEL008011	Supplied by Jing-Jiang Zhou
+18353104	AAEL008013	gene	AAEL008013	Supplied by Jing-Jiang Zhou
+18353104	AAEL009449	gene	AAEL009449	Supplied by Robert Waterhouse
+18353104	AAEL009597	gene	AAEL009597	Supplied by Robert Waterhouse
+18353104	AAEL009599	gene	AAEL009599	Supplied by Robert Waterhouse
+18353104	AAEL010662	gene	AAEL010662	Supplied by Jing-Jiang Zhou
+18353104	AAEL010666	gene	AAEL010666	Supplied by Jing-Jiang Zhou
+18353104	AAEL010714	gene	AAEL010714	Supplied by Jing-Jiang Zhou
+18353104	AAEL010718	gene	AAEL010718	Supplied by Jing-Jiang Zhou
+18353104	AAEL010872	gene	AAEL010872	Supplied by Jing-Jiang Zhou
+18353104	AAEL011481	gene	AAEL011481	Supplied by Jing-Jiang Zhou
+18353104	AAEL011482	gene	AAEL011482	Supplied by Jing-Jiang Zhou
+18353104	AAEL011484	gene	AAEL011484	Supplied by Jing-Jiang Zhou
+18353104	AAEL011487	gene	AAEL011487	Supplied by Jing-Jiang Zhou
+18353104	AAEL011490	gene	AAEL011490	Supplied by Jing-Jiang Zhou
+18353104	AAEL011491	gene	AAEL011491	Supplied by Jing-Jiang Zhou
+18353104	AAEL011494	gene	AAEL011494	Supplied by Jing-Jiang Zhou
+18353104	AAEL011499	gene	AAEL011499	Supplied by Jing-Jiang Zhou
+18353104	AAEL012377	gene	AAEL012377	Supplied by Robert Waterhouse
+18353104	AAEL013018	gene	AAEL013018	Supplied by Jing-Jiang Zhou
+18353104	AAEL014082	gene	AAEL014082	Supplied by Jing-Jiang Zhou
+18353104	AAEL014430	gene	AAEL014430	Supplied by Jing-Jiang Zhou
+18353104	AAEL015313	gene	AAEL015313	Supplied by Jing-Jiang Zhou
+18353104	AAEL015499	gene	AAEL015499	Supplied by Jing-Jiang Zhou
+18353104	AAEL015554	gene	AAEL015554	Supplied by Jing-Jiang Zhou
+18353104	AAEL015566	gene	AAEL015566	Supplied by Jing-Jiang Zhou
+18353104	AAEL015567	gene	AAEL015567	Supplied by Jing-Jiang Zhou
+9272447	AAEL016999	gene	AAEL016999	Supplied by Dan Lawson
+19496419	AAEL017973	gene	AAEL017973	Supplied by Dan Lawson
+19496419	AAEL017974	gene	AAEL017974	Supplied by Dan Lawson
+19496419	AAEL017975	gene	AAEL017975	Supplied by Dan Lawson
+19496419	AAEL017976	gene	AAEL017976	Supplied by Dan Lawson
+19496419	AAEL017977	gene	AAEL017977	Supplied by Dan Lawson
+19496419	AAEL017978	gene	AAEL017978	Supplied by Dan Lawson
+19496419	AAEL017979	gene	AAEL017979	Supplied by Dan Lawson
+19496419	AAEL017980	gene	AAEL017980	Supplied by Dan Lawson
+19496419	AAEL017981	gene	AAEL017981	Supplied by Dan Lawson
+19496419	AAEL017982	gene	AAEL017982	Supplied by Dan Lawson
+18801182	AAEL017251	gene	AGO2	Supplied by Corey Campbell
+18093007	AAEL006019	gene	VGSC	Supplied by Karla Saavedra-Rodriguez
+23593426	AAEL017251	gene	argonaute-2	Supplied by Dan Lawson
+23593426	AAEL011562	gene	Dronc	Supplied by Dan Lawson
+23593426	AAEL014148	gene	Dredd	Supplied by Dan Lawson
+23593426	AAEL005956	gene	caspase-16	Supplied by Dan Lawson
+23593426	AAEL009074	gene	IAP1	Supplied by Dan Lawson
+23696908	AAEL002653	gene	sema1a	Supplied by Keshava Mysore
+21738767	AAEL002653	gene	sema1a	Supplied by Michael Tomchaney
+21304954	AAEL014592	gene	fra	Supplied by Michael Tomchaney
+21738767	AAEL002346	gene	plexA	Supplied by Molly Duman-Scheel
+23497573	AAEL004546	gene	betaCop	Supplied by Molly Duman-Scheel
+23497573	AAEL008621	gene	cdc2	Supplied by Molly Duman-Scheel
+23497573	AAEL000402	gene	crebA	Supplied by Molly Duman-Scheel
+23497573	AAEL010226	gene	da	Supplied by Molly Duman-Scheel
+23497573	AAEL006254	gene	GlcAT-P	Supplied by Molly Duman-Scheel
+23497573	AAEL011323	gene	Hnf4	Supplied by Molly Duman-Scheel
+23497573	AAEL011273	gene	ucdk1	Supplied by Molly Duman-Scheel
+23497573	AAEL007286	gene	Manf	Supplied by Molly Duman-Scheel
+23497573	AAEL001033	gene	MBD	Supplied by Molly Duman-Scheel
+23497573	AAEL005605	gene	paps	Supplied by Molly Duman-Scheel
+23497573	AAEL003613	gene	sage	Supplied by Molly Duman-Scheel
+23497573	AAEL010012	gene	sar1	Supplied by Molly Duman-Scheel
+23497573	AAEL001273	gene	sec24	Supplied by Molly Duman-Scheel
+23497573	AAEL007987	gene	sec63	Supplied by Molly Duman-Scheel
+23497573	AAEL013012	gene	sec71	Supplied by Molly Duman-Scheel
+23497573	AAEL000947	gene	spase22-23	Supplied by Molly Duman-Scheel
+23497573	AAEL011568	gene	srp54	Supplied by Molly Duman-Scheel
+23497573	AAEL003285	gene	TRAM	Supplied by Molly Duman-Scheel
+23413701	AAEL006019	gene	AAEL006019	Supplied by Dan Lawson
+19171193	AAEL006019	gene	AAEL006019	Supplied by Dan Lawson
+21195763	AAEL006280	gene	JAHMT	Supplied by Dan Lawson
+18984053	AAEL006280	gene	JAHMT	Supplied by Dan Lawson
+20685335	AAEL010537	gene	Aam1	Supplied by Dan Lawson
+18086545	AAEL010537	gene	Aam1	Supplied by Dan Lawson
+18718536	AAEL002903	gene	p110	Supplied by Dan Lawson
+20356842	AAEL012695	gene	SCP-2	Supplied by Dan Lawson
+21037295	AAEL001196	gene	AAEL001196	Supplied by Dan Lawson
+21037295	AAEL012778	gene	APN1	Supplied by Dan Lawson
+19698787	AAEL012778	gene	APN1	Supplied by Dan Lawson
+19697959	AAEL009077	gene	ALP1	Supplied by Dan Lawson
+22699998	AAEL003512	gene	AQP1	Supplied by Dan Lawson
+19193723	AAEL004485	gene	NHE8	Supplied by Dan Lawson
+21035549	AAEL000693	gene	AAEL000693	Supplied by Dan Lawson
+23049766	AAEL015043	gene	HR3	Supplied by Dan Lawson
+21146607	AAEL015070	gene	mALP	Supplied by Dan Lawson
+22782071	AAEL006144	gene	IPPI	Supplied by Dan Lawson
+19234127	AAEL006424	gene	D7	Supplied by Dan Lawson
+22115961	AAEL007397	gene	E75	Supplied by Dan Lawson
+21035549	AAEL007766	gene	Rheb	Supplied by Dan Lawson
+20042685	AAEL001269	gene	AE	Supplied by Dan Lawson
+19806205	AAEL008297	gene	para	Supplied by Dan Lawson
+18207080	AAEL001703	gene	JHA15	Supplied by Dan Lawson
+23012454	AAEL002049	gene	CYC	Supplied by Dan Lawson
+22806993	AAEL010491	gene	FKBP12	Supplied by Dan Lawson
+21304954	AAEL010881	gene	AAEL010881	Supplied by Dan Lawson
+19748585	AAEL011325	gene	AKHR-I	Supplied by Dan Lawson
+19748585	AAEL010950	gene	AAEL010950	Supplied by Dan Lawson
+19748585	AAEL011996	gene	AKHR-II	Supplied by Dan Lawson
+20068045	AAEL011325	gene	AKHR	Supplied by Dan Lawson
+20068045	AAEL008652	gene	CCAPR	Supplied by Dan Lawson
+20068045	AAEL009673	gene	ACPR	Supplied by Dan Lawson
+19166934	AAEL011949	gene	Tf2	Supplied by Dan Lawson
+19926804	AAEL011967	gene	cry2	Supplied by Dan Lawson
+19166934	AAEL015458	gene	Tf1	Supplied by Dan Lawson
+21628559	AAEL004546	gene	AAEL004546	Supplied by Dan Lawson
+21628559	AAEL015001	gene	AAEL015001	Supplied by Dan Lawson
+21628559	AAEL013230	gene	AAEL013230	Supplied by Dan Lawson
+21914468	AAEL005609	gene	AAEL005609	Supplied by Dan Lawson
+21914468	AAEL005614	gene	AAEL005614	Supplied by Dan Lawson
+21914468	AAEL005607	gene	AAEL005607	Supplied by Dan Lawson
+21971482	AAEL006307	gene	ACC	Supplied by Dan Lawson
+21971482	AAEL001194	gene	FAS1	Supplied by Dan Lawson
+21971482	AAEL008160	gene	FAS2	Supplied by Dan Lawson
+23637637	AAEL002062	gene	ftz-f1	Supplied by Dan Lawson
+20797779	AAEL013105	gene	mosPTP-1	Supplied by Dan Lawson
+20797779	AAEL000563	gene	mosGCTL-1	Supplied by Dan Lawson
+19493208	AAEL010228	gene	SAAG-4	Supplied by Dan Lawson
+19130179	AAEL012704	gene	SCP-2L3	Supplied by Dan Lawson
+18977438	AAEL001932	gene	FADD	Supplied by Dan Lawson
+19552893	AAEL007624	gene	REL2	Supplied by Dan Lawson
+18391205	AAEL000960	gene	ILP3	Supplied by Dan Lawson
+19951734	AAEL005804	gene	ETHR	Supplied by Dan Lawson
+19085024	AAEL003832	gene	AAEL003832	Supplied by Dan Lawson
+19085024	AAEL003857	gene	AAEL003857	Supplied by Dan Lawson
+19085024	AAEL003841	gene	AAEL003841	Supplied by Dan Lawson
+23748165	AAEL003638	gene	NAT5	Supplied by Dmitri Boudko
+23930976	AAEL007826	gene	for	Supplied by Sam Rund
+22720108	AAEL012836	gene	AAEL012836	Supplied by Dan Lawson
+22720108	AAEL014617	gene	AAEL014617	Supplied by Dan Lawson
+22720108	AAEL014893	gene	AAEL014893	Supplied by Dan Lawson
+22720108	AAEL014616	gene	AAEL014616	Supplied by Dan Lawson
+22720108	AAEL003099	gene	AAEL003099	Supplied by Dan Lawson
+22720108	AAEL014609	gene	AAEL014609	Supplied by Dan Lawson
+22720108	AAEL006717	gene	AAEL006717	Supplied by Dan Lawson
+22720108	AAEL006798	gene	AAEL006798	Supplied by Dan Lawson
+22720108	AAEL000834	gene	AAEL000834	Supplied by Dan Lawson
+22720108	AAEL012838	gene	AAEL012838	Supplied by Dan Lawson
+22720108	AAEL007962	gene	AAEL007962	Supplied by Dan Lawson
+22720108	AAEL006793	gene	AAEL006793	Supplied by Dan Lawson
+22720108	AAEL014605	gene	AAEL014605	Supplied by Dan Lawson
+22720108	AAEL014614	gene	AAEL014614	Supplied by Dan Lawson
+22720108	AAEL014246	gene	AAEL014246	Supplied by Dan Lawson
+22720108	AAEL003763	gene	AAEL003763	Supplied by Dan Lawson
+22720108	AAEL014611	gene	AAEL014611	Supplied by Dan Lawson
+22720108	AAEL006810	gene	AAEL006810	Supplied by Dan Lawson
+22720108	AAEL014607	gene	AAEL014607	Supplied by Dan Lawson
+22720108	AAEL001288	gene	AAEL001288	Supplied by Dan Lawson
+22720108	AAEL009124	gene	AAEL009124	Supplied by Dan Lawson
+22720108	AAEL010500	gene	AAEL010500	Supplied by Dan Lawson
+22720108	AAEL004086	gene	AAEL004086	Supplied by Dan Lawson
+22720108	AAEL004724	gene	AAEL004724	Supplied by Dan Lawson
+22720108	AAEL005113	gene	AAEL005113	Supplied by Dan Lawson
+22720108	AAEL008138	gene	AAEL008138	Supplied by Dan Lawson
+22720108	AAEL005101	gene	AAEL005101	Supplied by Dan Lawson
+22720108	AAEL009120	gene	AAEL009120	Supplied by Dan Lawson
+22720108	AAEL006044	gene	AAEL006044	Supplied by Dan Lawson
+22720108	AAEL009129	gene	AAEL009129	Supplied by Dan Lawson
+22720108	AAEL000545	gene	AAEL000545	Supplied by Dan Lawson
+22720108	AAEL000687	gene	AAEL000687	Supplied by Dan Lawson
+22720108	AAEL001804	gene	AAEL001804	Supplied by Dan Lawson
+22720108	AAEL003349	gene	AAEL003349	Supplied by Dan Lawson
+22720108	AAEL007473	gene	AAEL007473	Supplied by Dan Lawson
+22720108	AAEL009134	gene	AAEL009134	Supplied by Dan Lawson
+22720108	AAEL013096	gene	AAEL013096	Supplied by Dan Lawson
+22720108	AAEL014019	gene	AAEL014019	Supplied by Dan Lawson
+22720108	AAEL014689	gene	AAEL014689	Supplied by Dan Lawson
+22720108	AAEL015002	gene	AAEL015002	Supplied by Dan Lawson
+22720108	AAEL015475	gene	AAEL015475	Supplied by Dan Lawson
+22720108	AAEL002391	gene	AAEL002391	Supplied by Dan Lawson
+22720108	AAEL005937	gene	AAEL005937	Supplied by Dan Lawson
+22720108	AAEL002046	gene	AAEL002046	Supplied by Dan Lawson
+22720108	AAEL002633	gene	AAEL002633	Supplied by Dan Lawson
+22720108	AAEL002031	gene	AAEL002031	Supplied by Dan Lawson
+22720108	AAEL002638	gene	AAEL002638	Supplied by Dan Lawson
+22720108	AAEL009121	gene	AAEL009121	Supplied by Dan Lawson
+22720108	AAEL014615	gene	AAEL014615	Supplied by Dan Lawson
+22720108	AAEL009127	gene	AAEL009127	Supplied by Dan Lawson
+22720108	AAEL014608	gene	AAEL014608	Supplied by Dan Lawson
+22720108	AAEL006811	gene	AAEL006811	Supplied by Dan Lawson
+22720108	AAEL008624	gene	AAEL008624	Supplied by Dan Lawson
+22720108	AAEL006802	gene	AAEL006802	Supplied by Dan Lawson
+22720108	AAEL017297	gene	AAEL017297	Supplied by Dan Lawson
+22720108	AAEL009117	gene	AAEL009117	Supplied by Dan Lawson
+22720108	AAEL009131	gene	AAEL009131	Supplied by Dan Lawson
+22720108	AAEL002801	gene	AAEL002801	Supplied by Dan Lawson
+22720108	AAEL014612	gene	AAEL014412	Supplied by Dan Lawson
+22720108	AAEL014413	gene	AAEL014413	Supplied by Dan Lawson
+22720108	AAEL014891	gene	AAEL014891	Supplied by Dan Lawson
+22720108	AAEL001078	gene	AAEL001078	Supplied by Dan Lawson
+22479665	AAEL002046	gene	AAEL002046	Supplied by Dan Lawson
+22479665	AAEL006798	gene	AAEL006798	Supplied by Dan Lawson
+22479665	AAEL014613	gene	AAEL014613	Supplied by Dan Lawson
+22479665	AAEL014609	gene	AAEL014609	Supplied by Dan Lawson
+22479665	AAEL014617	gene	AAEL014617	Supplied by Dan Lawson
+22479665	AAEL008846	gene	AAEL008846	Supplied by Dan Lawson
+22479665	AAEL018045	gene	AAEL018045	Supplied by Dan Lawson
+20176967	AAEL001951	gene	Act-4	Supplied by Dan Lawson
