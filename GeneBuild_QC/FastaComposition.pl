@@ -11,6 +11,7 @@ my $file;
 my $seq = "";
 my $seq2 = "";
 my $name;
+my $rest;
 my $total;
 my $total_g;
 my $total_a;
@@ -43,20 +44,32 @@ $/=">";
 
 open (FILE, "<$file") || die "Failed to open file: '$file'\n";
 while (<FILE>) {
-    chop $_;
+    chomp $_;
 
     # don't process the first (false) entry
     next if ($_ eq "");
 
-    # ensure all chars are upper-case
-    tr/[a-z]/[A-Z]/;
 
     # parse sequence name, and any trailing characters of header
-    ($name) = (/^(\S+)(.+)\n/);
+
+#    print "// $_\n";
+
+    if (/\s/) {
+        ($name,$rest) = (/^(\S+)\s(.+)\n/);
+    }
+    else {
+        ($name) = (/^(\S+)\n/);        
+    }
 
     # make string of just the sequence lines (still contains newline chars)
-    $seq = substr($_,length($1));
-    if (length($2) > 0) { $seq2=substr($seq,length($2)); $seq = $seq2;}
+
+
+
+    $seq = substr($_,length($name)+1);
+    if (length($2) > 0) { $seq2=substr($seq,length($rest)); $seq = $seq2;}
+
+    # ensure all chars are upper-case
+    $seq =~ tr/[a-z]/[A-Z]/;
 
    
     # calculate stats

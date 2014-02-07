@@ -21,6 +21,11 @@ my $outsize;
 my $no_x_containing;
 my $no_x_start;
 my $no_x_end;
+my $no_x_long;
+
+my $no_short_predictions_30;
+my $no_short_predictions_60;
+my $no_short_predictions_100;
 
 my %comp;
 my $residue;
@@ -100,10 +105,10 @@ while (<FILE>) {
     # Output formats
     if ( $full ) {
 	if ( $verbose ) {
-	    print "$name\tAla: $comp{A} Arg: $comp{R} Asn: $comp{N} Asp: $comp{D} Cys: $comp{C} Gln: $comp{Q} Glu: $comp{E} Gly: $comp{G} His: $comp{H} Ile: $comp{I} Leu: $comp{L} Lys: $comp{K} Met: $comp{M} Phe: $comp{F} Pro: $comp{P} Ser: $comp{S} Thr: $comp{T} Trp: $comp{W} Tyr: $comp{Y} Val: $comp{V} Unkn: $comp{X}\n";
+	    print "$name\t$seqlen\tAla: $comp{A} Arg: $comp{R} Asn: $comp{N} Asp: $comp{D} Cys: $comp{C} Gln: $comp{Q} Glu: $comp{E} Gly: $comp{G} His: $comp{H} Ile: $comp{I} Leu: $comp{L} Lys: $comp{K} Met: $comp{M} Phe: $comp{F} Pro: $comp{P} Ser: $comp{S} Thr: $comp{T} Trp: $comp{W} Tyr: $comp{Y} Val: $comp{V} Unkn: $comp{X}\n";
 	}
 	else {
-	    print "$name\tA: $comp{A} R: $comp{R} N: $comp{N} D: $comp{D} C: $comp{C} Q: $comp{Q} E: $comp{E} G: $comp{G} H: $comp{H} I: $comp{I} L: $comp{L} K: $comp{K} M: $comp{M} F: $comp{F} P: $comp{P} S: $comp{S} T: $comp{T} W: $comp{W} Y: $comp{Y} V: $comp{V} Unkn: $comp{X}\n";
+	    print "$name\t$seqlen\tA: $comp{A} R: $comp{R} N: $comp{N} D: $comp{D} C: $comp{C} Q: $comp{Q} E: $comp{E} G: $comp{G} H: $comp{H} I: $comp{I} L: $comp{L} K: $comp{K} M: $comp{M} F: $comp{F} P: $comp{P} S: $comp{S} T: $comp{T} W: $comp{W} Y: $comp{Y} V: $comp{V} Unkn: $comp{X}\n";
 	}
     }
     elsif ($total) {
@@ -116,22 +121,43 @@ while (<FILE>) {
     # Report 
     if ( $report ) {
 
+
+
+    # composition based reporting
 	if ( $comp{X} > 0 ) {
 	    print "$name\t$comp{X} UNKN residues from $seqlen residue prediction\n";
 	    $no_x_containing++;
 #	    print substr($seq,1,1) . "<< >>" . substr($seq,-2,1) . "\n";
-
 	    if ( substr($seq,1,1) eq "X" ) {
-		print "$name\tStarts with an UNKN residue, partial prediction or potential 5'-UTR issue?\n";
-		$no_x_start++;
+		    print "$name\tStarts with an UNKN residue, partial prediction or potential 5'-UTR issue?\n";# if ($verbose);
+		    $no_x_start++;
 	    }
 	    if ( substr($seq,-2,1) eq "X" ) {
-		print "$name\tEnds with an UNKN residue, partial prediction?\n";
-		$no_x_end++;
+		    print "$name\tEnds with an UNKN residue, partial prediction?\n";# if ($verbose);
+		    $no_x_end++;
 	    }
+        if ( $comp{X} > 5 ) {
+            print "$name\tContains more than 5 aa ambiguos residues\n";# if ($verbose);
+            $no_x_long++;
+        }
+    }
 
+    # Length based reporting
+    if ( $seqlen <= 30 ) {
+        print "$name\tLength <= 30 aa\n" if ($verbose);
+        $no_short_predictions_30++;
+    }
+    if ( $seqlen <= 60 ) {
+        print "$name\tLength <= 60 aa\n" if ($verbose);
+        $no_short_predictions_60++;
+    }
+    if ( $seqlen <= 100 ) {
+        print "$name\tLength <= 100 aa\n" if ($verbose);
+        $no_short_predictions_100++;
+    }
 
-	}
+	
+
     }
 
     # Clean up after yourself
@@ -143,9 +169,19 @@ close SHOTGUN;
 $/="\n";
 
 if ($report) {
-    print "// No. entries with UNKN X's $no_x_containing\n";
-    print "// No. entries with start UNKN X's $no_x_start\n";
-    print "// No. entries with end UNKN X's $no_x_end\n";
+    print "// File: $file\n";
+    print "// No. transcripts: $no_sequences\n";
+    print "//\n";
+    print "// Bad character reports\n";
+    print "// No. entries with UNKN X's        : $no_x_containing\n";
+    print "// No. entries with start UNKN X's  : $no_x_start\n";
+    print "// No. entries with end UNKN X's    : $no_x_end\n";
+    print "// No. entries with more than 5 X's : $no_x_long\n";
+    print "//\n// Length reports\n";
+    print "// No. entries less than 30 aa      : $no_short_predictions_30\n";
+    print "// No. entries less than 60 aa      : $no_short_predictions_60\n";
+    print "// No. entries less than 100 aa     : $no_short_predictions_100\n";
+    print "\n";
 }
 
 
