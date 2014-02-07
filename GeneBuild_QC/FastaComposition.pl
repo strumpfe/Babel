@@ -49,29 +49,40 @@ while (<FILE>) {
     # don't process the first (false) entry
     next if ($_ eq "");
 
-
     # parse sequence name, and any trailing characters of header
 
-#    print "// $_\n";
+#   print "// $_\n" if ($verbose);
+#   print "// PROCESS LINE : ".substr($_,0,50). " Length " . length($_) ."\n";
 
     if (/\s/) {
         ($name,$rest) = (/^(\S+)\s(.+)\n/);
-    }
+#        print "// Whitespace!!\n";
+#        print "// '$name'\n";
+#        print "// $rest\n";
+#        print "// First 50 chars rest: '".substr($rest,0,50)."'\n"; 
+ }
     else {
         ($name) = (/^(\S+)\n/);        
     }
 
     # make string of just the sequence lines (still contains newline chars)
-
-
-
     $seq = substr($_,length($name)+1);
-    if (length($2) > 0) { $seq2=substr($seq,length($rest)); $seq = $seq2;}
+
+    if (length($rest) > 0) { 
+        $seq2 = substr($seq,length($rest)+1); 
+        $seq = $seq2;
+    }
+
+#    print "// seq  " . length($seq).  "\n";
+#    print "// seq2 " . length{$seq2}. "\n";
+#    print "// First 50 chars seq: '".substr($seq,0,50)."'\n";
+#    next;
 
     # ensure all chars are upper-case
     $seq =~ tr/[a-z]/[A-Z]/;
 
-   
+    print "// $seq\n" if ($verbose);
+
     # calculate stats
     $seqlen_g = $seq =~ tr/G/G/;
     $seqlen_a = $seq =~ tr/A/A/;
