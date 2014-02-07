@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-## get_vectorbase_track_configuration.pl
+## get_track_configuration.pl
 ## lawson@ebi.ac.uk
 ## 2013-12-01 v0.2
 
@@ -527,7 +527,7 @@ __END__
  
 =pod
  
-=head1 NAME - get_vectorbase_track_configuraton.pl
+=head1 NAME - get_ini_track_configuraton.pl
 
 =head2 USAGE 
 
@@ -535,7 +535,7 @@ This script writes the ini configuration section for BAM or bigWig files for the
 
 =head2 ARGUMENTS
 
-B<get_vectorbase_track_configuraton.pl> arguments:
+B<get_ini_track_configuraton.pl> arguments:
 
 =head3 Datafiles
 
