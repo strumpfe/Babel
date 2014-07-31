@@ -518,7 +518,11 @@ Anopheles quadriannulatus
 Anopheles sinensis
 Anopheles stephensi
 Culex quinquefasciatus
+Glossina austeni
+Glossina brevipalpis
+Glossina fuscipes
 Glossina morsitans
+Glossina pallidipes
 Ixodes scapularis
 Lutzomyia longipalpis
 Pediculus humanus
