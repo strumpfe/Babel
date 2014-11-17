@@ -205,7 +205,6 @@ sub parse_spreadsheet {
 
 		chomp;
 		@f = split/\t/;
-		print "$_\n" if ($verboser);
 
 		# Symbol file {get data and write file}
 		#---------------------------------------------------------#
