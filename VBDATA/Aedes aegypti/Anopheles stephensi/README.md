@@ -1,1 +1,0 @@
-Anopheles stephensi

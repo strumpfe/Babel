@@ -1,1 +1,0 @@
-Glossina morsitans Yale

@@ -1,1 +1,0 @@
-Rhodnius prolixus CDC

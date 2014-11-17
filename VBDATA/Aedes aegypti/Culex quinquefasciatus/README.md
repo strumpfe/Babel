@@ -1,1 +1,0 @@
-Culex quinquefasciatus Johannesburg
