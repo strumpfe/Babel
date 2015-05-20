@@ -310,8 +310,8 @@ sub parse_spreadsheet {
 			$summary_data{Entries}++;
 			$summary_data{Active}++         if ( $f[2] eq "ACTIVE" );
 
-			$summary_data{CDS}++            if ( $f[3] eq "protein_coding");
-			$summary_data{ncRNA}++          if ( $f[3] =~ /RNA/);
+			$summary_data{CDS}++            if ( $f[3] eq "protein_coding") && ( $f[2] eq "ACTIVE" );   # Add requirement for row to have ACTIVE status
+			$summary_data{ncRNA}++          if ( $f[3] =~ /RNA/)  && ( $f[2] eq "ACTIVE" );             # Add requirement for row to have ACTIVE status
 
 			$summary_data{Symbol}++         if ( $f[7]  ne "" );
 			$summary_data{Symbol_CDS}++     if ( ($f[7] ne "") && ($f[3] eq "protein_coding") );
@@ -561,8 +561,10 @@ sub getdata {
 		'GMOY' => '1OytW4SzLunXCphzrX_mz6CwIsfn-zIzrt8eYmy6nbBk',
 		'GPAI' => '1qh1tGOHr21wKHSq6r6JwNNLE-x1K4x7kDxSEXULpaus',
 		'ISCW' => '10hoIT-Zhsk1byeB5nissrbPeKXGKO5ODt0rPwTzk8fY',
+		'LLOJ' => '1COtYQkfRVbbAzKKNDuJgiQuebivOZbmf_z2RJJSoCJE',
 		'MDOA' => '1ZNXGtXI_6L_qJjz8iMt02vNCFVdlD4Z0iisSqM2hw1A',
 		'PHUM' => '1WeBgVThFg8mW8-xrqtfMSWmSEGk9iwKi-8RWZDTucEg',
+		'PPAI' => '1qH5OdX08naKPWK21Eow7_l3K7CkoTy8MgtLX835rFPM',
 		'RPRC' => '1ZDgS4pOzhKIwtS8h5Ho-Yxot1iZGu_9RWi-EWrJdWA4',
 		);
 }
@@ -600,10 +602,10 @@ Glossina fuscipes
 Glossina morsitans
 Glossina pallidipes
 Ixodes scapularis
-#Lutzomyia longipalpis
+Lutzomyia longipalpis
 Musca domestica
 Pediculus humanus
-#Phlebotomus papatasi
+Phlebotomus papatasi
 Rhodnius prolixus
 __END__
  
