@@ -517,6 +517,7 @@ Anopheles minimus
 Anopheles quadriannulatus
 Anopheles sinensis
 Anopheles stephensi
+Biomphalaria glabrata
 Culex quinquefasciatus
 Glossina austeni
 Glossina brevipalpis
@@ -525,6 +526,7 @@ Glossina morsitans
 Glossina pallidipes
 Ixodes scapularis
 Lutzomyia longipalpis
+Musca domestica
 Pediculus humanus
 Phlebotomus papatasi
 __END__
