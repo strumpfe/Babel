@@ -10,6 +10,7 @@ use carp;
 my $file;
 my $seq = "";
 my $seq2 = "";
+my $fullseq;
 my $name;
 my $rest;
 my $total;
@@ -31,10 +32,12 @@ my $totallength;
 my $n50;
 my $verbose;
 my $help;
+my $cdna;
 
 &GetOptions(
     'file:s'      => \$file,
     'total'       => \$totallength,
+    'cdna'        => \$cdna,
     'n50'         => \$n50,
     'verbose'     => \$verbose,
     'help'        => \$help,
@@ -44,44 +47,58 @@ $/=">";
 
 open (FILE, "<$file") || die "Failed to open file: '$file'\n";
 while (<FILE>) {
+    print "<< NEXT SEQUENCE>>\n" if ($verbose);
+
     chomp $_;
+
+   while ( /\s$/ ) {
+	chop;
+	}
 
     # don't process the first (false) entry
     next if ($_ eq "");
 
     # parse sequence name, and any trailing characters of header
 
-#   print "// $_\n" if ($verbose);
-#   print "// PROCESS LINE : ".substr($_,0,50). " Length " . length($_) ."\n";
+#  	print "// Sequence segment\n$_\n// End of sequence\n" if ($verbose);
+#  	print "// PROCESS LINE : ".substr($_,0,50). " Length " . length($_) ."\n";
+#q	print "// PROCESS LINE : ".substr($_,-50).  " Length " . length($_) ."\n";
 
-    if (/\s/) {
-        ($name,$rest) = (/^(\S+)\s(.+)\n/);
+        next unless (/^\S+\s+\S+/);
+
+#    print;
+#    if (/\S/) {
+        ($name,$seq) = (/^(\S+)\s(\S+)/);
 #        print "// Whitespace!!\n";
-#        print "// '$name'\n";
-#        print "// $rest\n";
-#        print "// First 50 chars rest: '".substr($rest,0,50)."'\n"; 
- }
-    else {
-        ($name) = (/^(\S+)\n/);        
-    }
+#        print "// 1st term : '$name'\n";
+#        print "// Rest     : $rest\n";
+#        print "// First 50 chars rest: '".substr($seq,0,50)."'\n"; 
+# 	}
+#    else {
+#        ($name) = (/^(\S+)\n/);        
+#    $name = substr($_,1,13);
+#	print "// No whitespace, just the name ($name)\n"; 
+#   	}
 
     # make string of just the sequence lines (still contains newline chars)
-    $seq = substr($_,length($name)+1);
+#    $seq = substr($_,length($name)+1);
 
-    if (length($rest) > 0) { 
-        $seq2 = substr($seq,length($rest)+1); 
-        $seq = $seq2;
-    }
+#    if (length($rest) >  0) { 
+#        $seq2 = substr($seq,length($name)+1); 
+#        $seq = $seq2;
+#    }
 
-#    print "// seq  " . length($seq).  "\n";
-#    print "// seq2 " . length{$seq2}. "\n";
-#    print "// First 50 chars seq: '".substr($seq,0,50)."'\n";
-#    next;
+#	print "// clip fasta header text\n";
+#    	print "// sequence minus name " . length($seq) .  "\n";
+#    	print "// First 50 chars seq: '".substr($seq,0,50)."'\n";
+#	print "// Last  50 chars seq: '".substr($seq,-50)."'\n";
+	
+ #   next;
 
     # ensure all chars are upper-case
     $seq =~ tr/[a-z]/[A-Z]/;
 
-    print "// $seq\n" if ($verbose);
+#    print "// $seq\n" if ($verbose);
 
     # calculate stats
     $seqlen_g = $seq =~ tr/G/G/;
@@ -108,7 +125,13 @@ while (<FILE>) {
 
     # Output formats
     unless ($totallength) {
-	print "$name\t $seqlen\t$per_gc\tG: $seqlen_g\tA: $seqlen_a\tT: $seqlen_t\tC: $seqlen_c\tN: $seqlen_n\n";
+    	print "$name\t $seqlen\t$per_gc\tG: $seqlen_g\tA: $seqlen_a\tT: $seqlen_t\tC: $seqlen_c\tN: $seqlen_n\t".substr($seq,0,3)."\t".substr($seq,-3);
+        if ( $cdna ) {
+            print "\tNo_ATG"  unless ( substr($seq,0,3) eq "ATG");
+            print "\tNo_STOP" unless ( (substr($seq,-3) eq "TAG") || (substr($seq,-3) eq "TAA") || (substr($seq,-3) eq "TGA") );           
+            undef $seq;
+        }
+        print "\n";
     }
 }
 close SHOTGUN;

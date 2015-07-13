@@ -63,7 +63,7 @@ $/=">";
 
 open (FILE, "<$file") || die "Failed to open file: '$file'\n";
 while (<FILE>) {
-    chop $_;
+    chomp $_;
 
     # don't process the first (false) entry
     next if ($_ eq "");
@@ -72,7 +72,8 @@ while (<FILE>) {
     tr/[a-z]/[A-Z]/;
 
     # parse sequence name, and any trailing characters of header
-    ($name) = (/^(\S+)(.+)\n/);
+#    ($name) = (/^(\S+)(.+)\n/);
+    ($name) = (/^(\S+)\n/);
 
     # make string of just the sequence lines (still contains newline chars)
     $seq = substr($_,length($1));
@@ -112,10 +113,10 @@ while (<FILE>) {
 	}
     }
     elsif ($total) {
-	printf "%.30s\t$seqlen\n", $name;
+	printf "%.50s\t$seqlen\n", $name;
     }
     elsif ($stat && $verbose) {
-	printf "%.30s\t$seqlen\n", $name;
+	printf "%.50s\t$seqlen\n", $name;
     }
 
     # Report 
@@ -137,7 +138,7 @@ while (<FILE>) {
 		    $no_x_end++;
 	    }
         if ( $comp{X} > 5 ) {
-            print "$name\tContains more than 5 aa ambiguos residues\n";# if ($verbose);
+            print "$name\tContains more than 5 aa ambiguous residues\n";# if ($verbose);
             $no_x_long++;
         }
     }
@@ -228,24 +229,24 @@ if ($stat) {
     print "// Total length is $totallength residues\n";   
     print "// Mean length is $meanlen\n";
     print "// Standard deviation is $standdev\n";
-    print "//  σ size range is $lowerlimit_1s - $upperlimit_1s\n";
-    print "// 2σ size range is $lowerlimit_2s - $upperlimit_2s\n";
+    print "//  sd size range is $lowerlimit_1s - $upperlimit_1s\n";
+    print "// 2sd size range is $lowerlimit_2s - $upperlimit_2s\n";
 
     my $outsize_1s = 0;
     foreach my $i (sort keys %lengths) {
         # σ
-        if ( $lengths{$i} < $lowerlimit_1s) { $outsize_1s++; printf "// σ small %.30s $lengths{$i}\n", $i; }
-        if ( $lengths{$i} > $upperlimit_1s) { $outsize_1s++; printf "// σ big   %.30s $lengths{$i}\n", $i; }
+        if ( $lengths{$i} < $lowerlimit_1s) { $outsize_1s++; printf "// sd small %.60s \t$lengths{$i} \t[file: $file mean: $meanlen]\n", $i; }
+        if ( $lengths{$i} > $upperlimit_1s) { $outsize_1s++; printf "// sd big   %.60s \t$lengths{$i} \t[file: $file mean: $meanlen]\n", $i; }
     }
-    print "// No of entries outsize  σ: $outsize_1s\n";
+    print "// No of entries outsize  sd: $outsize_1s\n";
    
     my $outsize_2s = 0;
     foreach my $i (sort keys %lengths) {
         # 2σ
-        if ( $lengths{$i} < $lowerlimit_2s) { $outsize_2s++; printf "// 2σ small %.30s $lengths{$i}\n", $i; }
-        if ( $lengths{$i} > $upperlimit_2s) { $outsize_2s++; printf "// 2σ big   %.30s $lengths{$i}\n", $i; }
+        if ( $lengths{$i} < $lowerlimit_2s) { $outsize_2s++; printf "// 2sd small %.60s \t$lengths{$i} \t[file: $file mean: $meanlen]\n", $i; }
+        if ( $lengths{$i} > $upperlimit_2s) { $outsize_2s++; printf "// 2sd big   %.60s \t$lengths{$i} \t[file: $file mean: $meanlen]\n", $i; }
     }
-    print "// No of entries outsize 2σ: $outsize_2s\n";
+    print "// No of entries outsize 2sd: $outsize_2s\n";
 
 }
 

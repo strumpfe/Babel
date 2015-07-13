@@ -554,12 +554,14 @@ sub getdata {
 		'AQUA' => '1jWDRiITV3_XP14CKfNogbDzADQCf3nctZzJKKMNmqUg',
 		'ASIN' => '1NQL-9mmykZ0fWls6405mhCKSxIVfE2kvxaFRogb1tXY',
 		'ASTE' => '1ZVMIQ_tr3zJBMuk-KdUcEXSIqVOjL8jANc_SKqQAlkU',
+		'BGLB' => '1PPSMgx2-z6CPa4Cit5Kh1IUCa9i7Z6Rpnv4H5ks38UA',
 		'CPIJ' => '1_6KHioJdjHYroDooP48FavcclKs1D2vqxPZvJzcTq_U',
 		'GAUT' => '1VWQ8g_JXkz8L4XLvJJ5AVGwjhr4NP5am25-DUtJcjc0',
 		'GBRI' => '1n8LzP0VOEUbgsFtkr2rX6FJNUEfr9CGCfKikrI0WdVo',
 		'GFUI' => '131u1wnBlJaIlbLbmih2zu2q1lCZhPFK3oNfo9LD5gY0',
 		'GMOY' => '1OytW4SzLunXCphzrX_mz6CwIsfn-zIzrt8eYmy6nbBk',
 		'GPAI' => '1qh1tGOHr21wKHSq6r6JwNNLE-x1K4x7kDxSEXULpaus',
+		'GPAP' => '1hRRFAQC6YJTxJAPDe5SuF0-I7se4jgicfPkcXPVU86E',
 		'ISCW' => '10hoIT-Zhsk1byeB5nissrbPeKXGKO5ODt0rPwTzk8fY',
 		'LLOJ' => '1COtYQkfRVbbAzKKNDuJgiQuebivOZbmf_z2RJJSoCJE',
 		'MDOA' => '1ZNXGtXI_6L_qJjz8iMt02vNCFVdlD4Z0iisSqM2hw1A',
@@ -594,13 +596,14 @@ Anopheles minimus
 Anopheles quadriannulatus
 Anopheles sinensis
 Anopheles stephensi
-#Biomphalaria glabrata
+Biomphalaria glabrata
 Culex quinquefasciatus
 Glossina austeni
 Glossina brevipalpis
 Glossina fuscipes
 Glossina morsitans
 Glossina pallidipes
+Glossina palpalis
 Ixodes scapularis
 Lutzomyia longipalpis
 Musca domestica
