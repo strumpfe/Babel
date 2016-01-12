@@ -11,8 +11,8 @@ my $summary;
 my $full;
 my $all,
 my $organism;        # Code (4 letters) to designate which species to process
-my @organism;        
-my $filetype;        # Xref file type to generate 
+my @organism;
+my $filetype;        # Xref file type to generate
 # filetype options
 my $symbol;          # write symbol file
 my $synonym;         # write synonym file
@@ -23,7 +23,7 @@ my $release;         # Release version
 my $updated;         # updated?
 my $protcod;         # protein-coding only
 my $rna;             # ncRNA only
-my $write;           # write output to file 
+my $write;           # write output to file
 my $terminal;        # write output to terminal
 # Synonyms
 my %synonym_data;
@@ -111,7 +111,7 @@ $filetype = "description" if ( $description );
 
 #---------------------------------------------------------#
 
-## 
+##
 ## Main options, multi-species reporting or single species processing
 ##
 
@@ -230,7 +230,7 @@ sub parse_spreadsheet {
 
 		chomp;
 		# write row to output file if -summary -write option for debugging purposes
-		if ( ( $summary ) && ( $write ) ) { 
+		if ( ( $summary ) && ( $write ) ) {
 			print OUTPUT "$_\n";
 		}
 
@@ -264,7 +264,7 @@ sub parse_spreadsheet {
 			# discard annotations which aren't synonyms
 			next unless ( $f[2] eq "SYNONYM" );
 			print "// Locus: $f[1] Symbol: $f[7] Synonym: $f[8]\n" if $verbose;
- 			# store the synoym in hash 
+ 			# store the synoym in hash
  			$synonym_data{$f[1]} = $synonym_data{$f[1]} . "$f[8], ";
  			print "// Assign $f[8] as synonym of $f[1] ($f[7])\n" if $verbose;
 		}
@@ -288,7 +288,7 @@ sub parse_spreadsheet {
 		#---------------------------------------------------------#
 		if ( $description) {
 			# discard annotations which aren't synonyms
-			next unless ( $f[2] eq "ACTIVE" );	
+			next unless ( $f[2] eq "ACTIVE" );
 			# process only those loci with a symbol
 	 		next if ( $f[7] ne "");
 	 		next unless ( $f[10] ne "");
@@ -332,7 +332,7 @@ sub parse_spreadsheet {
 			if ( $f[2] eq "CITATION" ) {
 				$summary_data{Citation}++;
 				$sum_citation{$f[12]}++;
- 			}	
+ 			}
 		}
 		# Updated summary
 		#---------------------------------------------------------#
@@ -387,8 +387,8 @@ sub parse_spreadsheet {
 	# Summary file {write file}
 	#---------------------------------------------------------#
 	if ( $summary && !$updated) {
-		my $no_papers   = scalar (keys %sum_citation) - 1;  # 2015-01-14 added -1 modifier
-		my $no_families = scalar (keys %sum_families) - 1;  # 2015-01-14 added -1 modifier
+		my $no_papers   = scalar (keys %sum_citation) ; if ($no_papers) {$no_papers--;} # 2015-01-14 added -1 modifier
+		my $no_families = scalar (keys %sum_families) ; if ($no_families) {$no_families--;} # 2015-01-14 added -1 modifier
 
 		# if verbose write long list, else table row
 		if ( $verbose ) {
@@ -471,11 +471,11 @@ sub export_spreadsheet {
 }
 #_ end of export_spreadsheet subroutine
 
-## Fields from spreadsheet 
-# Curation_ID  
-# Stable_ID  
-# Status 
-# Biotype 
+## Fields from spreadsheet
+# Curation_ID
+# Stable_ID
+# Status
+# Biotype
 # Model
 # From
 # To
@@ -496,6 +496,7 @@ sub export_spreadsheet {
 sub getdata {
 	%organism2code = (
 		'Aedes aegypti'             => 'AAEL',
+                'Aedes albopictus'          => 'AALF',
 		'Anopheles albimanus'       => 'AALB',
 		'Anopheles arabiensis'      => 'AARA',
 		'Anopheles atroparvus'      => 'AATE',
@@ -529,12 +530,15 @@ sub getdata {
 		'Pediculus humanus'         => 'PHUM',
 		'Phlebotomus papatasi'      => 'PPAI',
 		'Rhodnius prolixus'         => 'RPRC',
+                'Sarcoptes scabiei'         => 'SSCA',
+                'Stomoxys calcitrans'       => 'SCAU',
 		);
 
 	%code2organism = reverse %organism2code;
 
 	%orgkeys = (
 		'AAEL' => '1D6Ax2HJyWcnukIkPu2Zio7hZ_ajQiZbvzfb1DfINLwo',
+                'AALF' => '1T8nVia4ATqIZKNi8FbMR9ikvEb9JDxGTppgkTUfLw3Q',
 		'AALB' => '1IkszmWkEzJ5lTHw6ugOSGFV_0soguBIoTPOh7-CE51o',
 		'AARA' => '1a5OtCuDUGxbrg_0rMcbDQHUHXtwbzO_g9vTm_K896UY',
 		'AATE' => '1oxUeyJVjzrq4oe5LlVqHzEGB1Hd2_7_75sCGuWxEkT0',
@@ -568,15 +572,18 @@ sub getdata {
 		'PHUM' => '1WeBgVThFg8mW8-xrqtfMSWmSEGk9iwKi-8RWZDTucEg',
 		'PPAI' => '1qH5OdX08naKPWK21Eow7_l3K7CkoTy8MgtLX835rFPM',
 		'RPRC' => '1ZDgS4pOzhKIwtS8h5Ho-Yxot1iZGu_9RWi-EWrJdWA4',
+                'SSCA' => '1pUcRMAx2Ua21j87owwrowN9S5JMcZvAdrmfaY2piKEo',
+                'SCAU' => '1xIVpy1SH4r7eyx4QB9gtQm091AEp2UBbKrWVG6N_qsc',
 		);
 }
-#_ end of subroutine data 
+#_ end of subroutine data
 
 #---------------------------------------------------------#
 
 
 __DATA__
 Aedes aegypti
+Aedes albopictus
 Anopheles albimanus
 Anopheles arabiensis
 Anopheles atroparvus
@@ -610,14 +617,16 @@ Musca domestica
 Pediculus humanus
 Phlebotomus papatasi
 Rhodnius prolixus
+Sarcoptes scabiei
+Stomoxys calcitrans
 __END__
- 
+
 
 =pod
- 
+
 =head1 NAME - write_xref_files.pl
 
-=head2 USAGE 
+=head2 USAGE
 
 This script writes tsv files for use in VectorBase xref pipelines.
 
@@ -625,17 +634,17 @@ This script writes tsv files for use in VectorBase xref pipelines.
 
 =over 2
 
-=item -find updates for all species since a defined timepoint, 
+=item -find updates for all species since a defined timepoint,
 
 Use the I<-updated> option to find annotations that have been added or modifed since a particular date. If you add the I<-verbose> flag to get a list of the changes.
 
 =over 2
 
-=item All species, 
+=item All species,
 
 C<-updated 20150101 -summary>
 
-=item Single species, 
+=item Single species,
 
 C<-updated 20150101 -organism Anopheles gambiae>
 
@@ -645,13 +654,13 @@ C<-updated 20150101 -organism Anopheles gambiae>
 
 =over 2
 
-=item All species, 
+=item All species,
 
 C<-release VB-2015-02 -symbol -write>, export single datatype for all species
 
 C<-release VB-2015-02 -full -write -summary>, export all data types for all species
 
-=item Single species, 
+=item Single species,
 
 C<-release VB-2015-02 -organism Anopheles gambiae -symbol -write>, export single datatype for single species
 
@@ -659,7 +668,7 @@ C<-release  VB-2015-02 -organism Anopheles gambiae -full -write>, export single 
 
 =back
 
-=back 
+=back
 
 =head2 ARGUMENTS
 
@@ -718,12 +727,3 @@ B<write_xref_files.pl> arguments:
 Dan Lawson (lawson@ebi.ac.uk)
 
 =cut
-
-
-
-
-
-
-
-
-
